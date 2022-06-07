@@ -1,0 +1,21 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.logo::after{
+    content: '';
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+    border-bottom: 1px solid #000;
+}

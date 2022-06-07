@@ -1,0 +1,110 @@
+Balanza Digital 102
+
+La Balanza Digital Zetronic es un dispositivo electrónico capáz de adquirir el peso expuesto sobre una celda de carga, y presentarlo en forma precisa sobre los displays.
+
+$ no figura
+----------
+
+Balanza Digital 103
+
+Adquirir el peso expuesto sobre una celda de carga. Rango Variable. Presentación Precisa en sus 5 displays. Procesamiento de datos basado en microcontrolador. Regulación de puesta a cero, tara y resolución hasta 16000 pasos.
+
+$ no figura
+----------
+
+Control de Nivel
+
+Dispositivo para medición de nivel de líquidos no corrosivos dentro de sus contenedores. Tres puntos de sensado. Dos salidas activadas en los nivles establecidos. No necesita ajustes.
+
+$ no figura
+----------
+
+Encendido Electrónico
+
+Encendido Electrónico para grupo electrógeno diesel-gas. Reemplace el encendido original. Conexión a PC. Variación de parámetros en tiempo real. Puede utilizarse en 4, 6 u 8 cilindros. Salidas para eventos de alarma.
+
+$ no figura
+----------
+
+Sistema Bi-Fuel
+
+El Sistema opera por mezcla de combustible diesel y gas natural. Control del balance de combustibles por microprocesador. Reducción del flujo normal del diesel. No requiere modificaciones al motor diesel.
+
+$ no figura
+----------
+
+Controlador Ambiental C5
+
+Este equipo está especialmente diseñado para utilizarse en el control ambiental de galpones de Cerdos o Pollos, cuanta con 5 etapas totalmente programables.
+
+$ no figura
+----------
+
+Controlador Ambiental C2
+
+Este equipo está especialmente diseñado para utilizarse en el control ambiental de galpones de Cerdos o Pollos, cuanta con 2 etapas totalmente programables.
+
+$ no figura
+----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+.navbar{
+    margin-bottom: 1rem;
+}
+
+.ul-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.link-item a{
+    padding: .3rem;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #000;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.link-item a:hover{
+    color: #fff;
+    background-color: #444;
+}

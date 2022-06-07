@@ -1,0 +1,14 @@
+.footer-container{
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.footer-text{
+    color: #fff;
+    text-align: center;
+    word-wrap: normal;
+}

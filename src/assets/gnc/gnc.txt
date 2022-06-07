@@ -1,0 +1,170 @@
+Aspirada de Nivel (ZL-5)
+
+Realiza la conmutación de combustible en vehículos carburados con regulador aspirado. Indica la presión de gas mediante 5 leds.  Este producto incluye el manómetro de presión y el cablado de conexión.
+
+$4.536,00
+----------
+
+Electronica de Reserva (ZL-6)
+
+Realiza la conmutación de combustible en vehículos carburados con regulador estandar. Indica la reserva de gas.  Incluye cableado de conexión, NO incluye manómetro de reserva.
+
+$2.300,00
+----------
+
+Electrónica de Nivel (ZL-1)
+
+Realiza la conmutación de combustible en vehículos carburados con regulador estandar. Indica la presión de gas mediante 5 leds.  Incluye cableado de conexión y manómetro de presión.
+
+$4.536,00
+----------
+
+Carburada (ZL-7)
+
+Realiza la conmutación de combustible en vehículos carburados.  Indica la presión de gas mediante 5 leds.  Este producto incluye el manómetro de presión y el cablado de conexión.
+
+$4.536,00
+----------
+
+Inyección (ZL-2)
+
+Realiza la conmutación de combustible en vehículos inyección. Indica la presión de gas y la reserva.
+
+$4.536,00
+----------
+
+Inyección SMD (ZL-8)
+
+Realiza la conmutación de combustible en vehículos inyección.  Indica la presión de gas mediante 5 leds.  Este producto incluye el manómetro de presión y el cablado de conexión.
+Realiza la conmutación de combustible en vehículos inyección. Indica la presión de gas y la reserva.
+
+$4.536,00
+----------
+
+Digital (ZL-3)
+
+Realiza la conmutación de combustible en vehículos carburados o inyeccion.  Indica la presión de gas mediante un display de 3 dígitos.  Este producto incluye el manómetro de presión y el cablado de conexión.
+
+$6.720,00
+----------
+
+Monopunto Sonda Lambda/Oxígeno (ZE-1)
+
+Este equipo está especialmente diseñado para instalarse en vehículos con inyección monopunto. Emula resistencias de monoinyector de 18 y 48 ohms y la temporización del tiempo de superposición NAFTA-GAS hasta 4 segundos.
+
+$4.500,00
+----------
+
+Monoinyector Universal (ZE-3)
+
+Se utiliza para emular el inyector de combustible en vehículos monopunto.  Puede emular tipos de resistencias, 18 y 48 ohms.
+
+$3.150,00
+----------
+
+Sonda Lambda-Oxígeno (ZE-4)
+
+Posee un jumper con el cual se selecciona el tipo de sonda a emular. Esto facilita la instalación y los requerimientos de stock.
+
+$3.150,00
+----------
+
+Emulador Multipunto 4 Cilindros (ZE-5)
+
+Este equipo se provee con cableado y llaves selectores de impedancia para adaptarlo a cualquier tipo de marca de vehículo.
+
+$4.620,00
+----------
+
+Multipunto 6 Cilindros (ZE-6)
+
+Este equipo se provee con cableado y llaves selectores de impedancia para adaptarlo a cualquier tipo de marca de vehículo.
+
+$5.880,00
+----------
+
+Multipunto 4 Cil SMD Mercosur (ZE-7)
+
+Se utiliza para emular los inyectores en vehículos multipunto. Su reducido tamaño permite una fácil instalación.
+
+$4.620,00
+----------
+
+Sonda Oxígeno Regulable (ZE-11)
+
+Emula cualquier tipo de sonda. Se puede regular la frecuencia y la proporción de mezcla pobre-rica, y observar la señal de la sonda original y emulada.
+
+$4.620,00
+----------
+
+MAP (ZA-1)
+
+Trabaja directamente con la computadora del vehículo variando las señales de los sensores que son la señal de mariposa (TPS) y la señal de MAP o MAF.
+
+$6.300,00
+----------
+
+MAP Kangoo (ZA-7)
+
+Utilizado para solucionar inconvenientes de contra-explosiones para los motores 1.6 8V en Kangoo y Clio II.
+
+$6.300,00
+----------
+
+Volante (ZA-2)
+
+Avanza el vehículo por intermedio de la señal de volante en los vehículos a inyeción. Detecta automáticamente el tipo de señal de volante 36-1 ó 60-2 dientes.  Este equipo NO incluye el adaptador con las fichas para el sensor de volante.
+
+$6.300,00
+----------
+
+Bobina (ZA-3)
+
+Detecta la impedancia de la bobina de carga y se configura automáticamente de acuerdo a cada modelo de bobina (platinos, encendido electrónico, captor hall o inductivo).
+
+$6.300,00
+----------
+
+Bobina Variable (ZA-6)
+
+Este equipo se utiliza en vehículos monobobina con encendido electrónico a carburador.
+
+$6.300,00
+----------
+
+Señal Simple (ZA-5)
+
+Utilizado para todos los vehículos monobobina que tengan incorporado la misma al módulo de encendido.
+
+$6.300,00
+----------
+
+Doble Señal Simple (ZA-8)
+
+﻿Para vehículos con 2 bobinas dobles con sus respectivos módulos de encendido incorporados a ellas.  Cuando no se puede instalar Volante.
+
+$6.300,00
+----------
+
+Sistema Lambda Volante (ZPP-3)
+
+Sistema de Lazo Cerrado con Variador de Avance de tipo VOLANTE todo en un solo gabinete. La calibracion se efectúa mediante una PC, el sistema incluye el programa.
+
+$8.500,00
+----------
+
+Control Lambda (ZPP-1)
+
+Este equipo cuenta con un sistema que tiene control sobre la mezcla GAS-AIRE mediante un sistema de regulación por medio de un motor paso a paso instalado sobre la manguera de ingreso de GAS.  El combo también tiene incluido el ¨Emulador de sonda Lambda¨, ¨llave conmutadora digital¨ y ¨Avance MAP¨.  Todo es programable desde la PC.
+
+$8.500,00
+----------
+
+Control Lambda Básico (ZPP-2)
+
+Este equipo cuenta con un sistema que tiene control sobre la mezcla de GAS-AIRE mediante un sistema de regulación por medio de un motor paso a paso instalado sobre la manguera de ingreso de GAS.  Posee un emulador de sonda Lambda y una conexión RS232 a PC para observar y cambiar los parámetros del equipo ON LINE.  Se calibra mediante PC.
+
+$6.300,00
+----------
+
+
