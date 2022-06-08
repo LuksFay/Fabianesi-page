@@ -1,13 +1,11 @@
 import React from 'react';
-// import { CardItemsHero } from './CardItemsHero';
-import {CardAllItems} from './CardAllItems';
 import '../styles/Card.css';
 
-const Card = () => {
+const Card = (props) => {
   return (
     <>
         <div className='card-section'>
-            {CardAllItems.map(item => {
+            {props.items.map(item => {
                 return(
                 <div className="container-card" key={item.id}>
                     <div className="img-card">

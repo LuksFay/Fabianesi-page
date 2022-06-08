@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
 import {Link} from 'react-router-dom';
+import { CardItemsHero } from '../components/CardItemsHero';
 import '../styles/Inicio.css';
 
 const Inicio = () => {
@@ -24,14 +25,14 @@ const Inicio = () => {
         </div>
     </section>
     <h2 className="title-section-card">Nuevos Productos</h2>
-    {/* <Card /> */}
+    <Card items={CardItemsHero}/>
     <div className="btnLink-container">
           <button className='btn-link'>
               <Link to='/catalogo'>Ver Todo</Link>
           </button>
     </div>
     <h2 className="title-section-card">Productos Destacados</h2>
-    {/* <Card /> */}
+    <Card items={CardItemsHero}/>
     <section className='empresa-container'>
           <div className='info-empresa'>
               <div className="text-empresa">
