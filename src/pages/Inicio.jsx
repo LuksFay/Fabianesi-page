@@ -24,23 +24,29 @@ const Inicio = () => {
             <div className="img-container"></div> 
         </div>
     </section>
+
     <h2 className="title-section-card">Nuevos Productos</h2>
+
     <Card items={CardItemsHero}/>
+
     <div className="btnLink-container">
-          <button className='btn-link'>
-              <Link to='/catalogo'>Ver Todo</Link>
-          </button>
+        <button className='btn-link'>
+            <Link to='/catalogo'>Ver Todo</Link>
+        </button>
     </div>
+
     <h2 className="title-section-card">Productos Destacados</h2>
+
     <Card items={CardItemsHero}/>
+
     <section className='empresa-container'>
-          <div className='info-empresa'>
-              <div className="text-empresa">
-                  <h3 className='title-empresa'>Fabianesi Tools</h3>
-                  <p className='descr-empresa'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non amet harum tenetur. Blanditiis, placeat vero. Cumque aliquam eveniet dicta vel vitae doloribus debitis laborum magni qui, aut dolore et adipisci.</p>
-              </div>
-          </div>
-          <div className="map-empresa"></div>
+        <div className='info-empresa'>
+            <div className="text-empresa">
+                <h3 className='title-empresa'>Fabianesi Tools</h3>
+                <p className='descr-empresa'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non amet harum tenetur. Blanditiis, placeat vero. Cumque aliquam eveniet dicta vel vitae doloribus debitis laborum magni qui, aut dolore et adipisci.</p>
+            </div>
+        </div>
+        <div className="map-empresa"></div>
     </section>
     </>
   )

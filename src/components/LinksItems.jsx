@@ -1,5 +1,3 @@
-import React from "react";
-
 export const linksItems = [
     {
       id:1,

@@ -1,0 +1,34 @@
+.slider-container{
+    margin: 2rem 1rem;
+}
+
+.card{
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .8);
+    border: 2px solid #000;
+    border-radius: .3rem;
+}
+
+.slick-slide > div{
+    margin: 0 10px;
+}
+
+.slick-list{
+    margin: 0 -10px;
+}
+
+.card-top img{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.card-bottom{
+    color: #ccc;
+    text-align: center;
+    border-top: 2px solid #000;
+}
+
+.card-bottom h3{
+    margin-top: .5rem;
+}

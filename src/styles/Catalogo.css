@@ -1,0 +1,9 @@
+.title-catalogo{
+    margin: 1rem;
+}
+
+.card-section-catalogo{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+}
