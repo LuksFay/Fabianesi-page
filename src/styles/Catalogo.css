@@ -2,9 +2,20 @@
     margin: 1rem;
 }
 
-.sep{
-    height: 10rem;
+.divider{
     width: 100%;
-    background-color: #ccc;
+    height: 5rem;
     margin: 3rem 0;
+    background-color: #ccc;
+}
+
+.container-prod{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+@media (max-width: 768px){
+    .container-prod{
+        display: block;
+    }
 }

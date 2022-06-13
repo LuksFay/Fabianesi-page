@@ -3,12 +3,12 @@
     text-align: center;
   }
   
-  .logo::after{
+.logo::after{
     content: '';
     display: block;
     width: 100%;
     border-bottom: 1px solid #000;
-  }
+}
 
 .link-item{
     margin: .5rem;
