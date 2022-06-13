@@ -2,8 +2,9 @@
     margin: 1rem;
 }
 
-.card-section-catalogo{
-    height: 100%;
-    display: grid;
-    grid-template-columns: 20vw 80vw;
+.sep{
+    height: 10rem;
+    width: 100%;
+    background-color: #ccc;
+    margin: 3rem 0;
 }

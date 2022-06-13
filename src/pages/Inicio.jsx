@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from '../components/Card';
 import {Link} from 'react-router-dom';
-import { CardItemsHero } from '../components/CardItemsHero';
 import '../styles/Inicio.css';
+import { CardItemsHero } from '../components/items/CardItemsHero';
 
 const Inicio = () => {
   return (
@@ -37,7 +37,7 @@ const Inicio = () => {
 
     <h2 className="title-section-card">Productos Destacados</h2>
 
-    <Card items={CardItemsHero}/>
+    {/* <Card items={CardItemsHero}/> */}
 
     <section className='empresa-container'>
         <div className='info-empresa'>

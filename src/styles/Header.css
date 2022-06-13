@@ -1,21 +1,37 @@
-header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .logo{
-    margin: 1rem;
-    width: 100%;
+    margin-top: 1rem;
     text-align: center;
-}
-
-.logo::after{
+  }
+  
+  .logo::after{
     content: '';
     display: block;
     width: 100%;
-    margin: .5rem 0;
     border-bottom: 1px solid #000;
+  }
+
+.link-item{
+    margin: .5rem;
+    padding: .5rem;
+    font-weight: 600;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: .3rem;
+    transition: .3s all ease-in-out;
+}
+
+.link-item:hover{
+    color: #fff;
+    background-color: #202020;
+}
+
+.MuiToolbar-root{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px){
+.MuiToolbar-root{
+    justify-content: flex-end;
+}  
 }
