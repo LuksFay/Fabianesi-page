@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import { AppBar, Container, Hidden, Toolbar } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import { Link } from 'react-router-dom';
+import Divider from '@mui/material/Divider';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import '../styles/Header.css';
 
 const LinksItems = [
@@ -40,6 +42,7 @@ const LinksItems = [
 ];
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <AppBar position='sticky' color='default'>
@@ -56,13 +59,31 @@ const Header = () => {
                 })}
               </Hidden>
               <Hidden smUp>
-                <IconButton>
+                <IconButton onClick={() => setOpen(true)}>
                   <MenuIcon />
                 </IconButton>
               </Hidden>
             </Toolbar>
           </Container>
-          
+          <SwipeableDrawer 
+            anchor='right' 
+            open={open} 
+            onOpen={() => setOpen(true)} 
+            onClose={() => setOpen(false)}>
+            <div>
+            <IconButton onClick={() => setOpen(false)}>
+              <ChevronRightIcon />
+            </IconButton>
+            </div>
+            <Divider />
+              {LinksItems.map(item => {
+                return(
+                  <Link className='link-item' to={item.path} key={item.id}>
+                    {item.title}
+                  </Link>
+                )
+              })}
+          </SwipeableDrawer>
       </AppBar>
     </>
   )
