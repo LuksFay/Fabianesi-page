@@ -11,12 +11,11 @@ const Catalogo = () => {
       <h2 className='title-catalogo'>Catálogo</h2>
       <SliderCards />
       <div className="divider"></div>
-      <div className="container-prod">
-          <div className='prib'>
+      <div className="container-catalogo">
+        <div className='filter-catalogo'>
           <FilterList />
-          </div>
-          <Card items={CardAllItems} />
-
+        </div>
+        <Card items={CardAllItems} />
       </div>
     </>
   )

@@ -9,13 +9,19 @@
     background-color: #ccc;
 }
 
-.container-prod{
+.container-catalogo{
     display: grid;
     grid-template-columns: 30% auto;
 }
 
 @media (max-width: 768px){
-    .container-prod{
-        display: block;
-    }
+
+.container-catalogo{
+    display: block;
+}
+
+.filter-catalogo{
+    margin: 1rem 0;
+}
+
 }

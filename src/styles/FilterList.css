@@ -1,31 +1,6 @@
-.container-list{
+.container-filter{
+    margin: 0 1rem;
     border: 2px solid #000;
     border-radius: .3rem;
 }
 
-.ul-filter{
-    margin: 1rem;
-}
-
-.item-filter{
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-    padding: .5rem 0;
-    border-bottom: 1px solid #000;
-}
-
-.item-filter input{
-    width: 1rem;
-    height: 1rem;
-    cursor: pointer;
-}
-
-.btn-filter{
-    font-size: 1rem;
-    margin-left: .5rem;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
