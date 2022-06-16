@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from '../components/Card';
+import CardCatalogo from '../components/CardCatalogo';
 import FilterList from '../components/FilterList';
-import { CardAllItems } from '../components/items/CardAllItems';
+// import { CardAllItems } from '../components/items/CardAllItems';
 import SliderCards from '../components/SliderCards';
 import '../styles/Catalogo.css';
 
@@ -15,7 +16,7 @@ const Catalogo = () => {
         <div className='filter-catalogo'>
           <FilterList />
         </div>
-        <Card items={CardAllItems} />
+        <CardCatalogo />
       </div>
     </>
   )

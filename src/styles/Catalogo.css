@@ -11,7 +11,7 @@
 
 .container-catalogo{
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 22rem auto;
 }
 
 @media (max-width: 768px){
