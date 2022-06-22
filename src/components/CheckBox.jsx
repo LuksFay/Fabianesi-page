@@ -1,30 +1,90 @@
 import React, {useState} from 'react';
 import { Box, Checkbox, FormControlLabel, FormGroup } from '@mui/material';
-import { CardAllItems } from './items/CardAllItems';
+
+const listItems = [
+    {
+        id: 1,
+        title: 'Todos los Productos',
+        value: 'Todos',
+    },
+    {
+        id: 2,
+        title: 'Bateas Ultrasonido',
+        value: 'Batea',
+    },
+    {
+        id: 3,
+        title: 'Diagnostico Directo',
+        value: 'DiagnosticoDirecto',
+    },
+    {
+        id: 4,
+        title: 'Electrónica / Portones automáticos',
+        value: 'Porton',
+    },
+    {
+        id: 5,
+        title: 'Escáneres',
+        value: 'Escaner',
+    },
+    {
+        id: 6,
+        title: 'Escáneres Profesionales AUTEL',
+        value: 'EscanerProfesional',
+    },
+    {
+        id: 7,
+        title: 'GNC',
+        value: 'Gnc',
+    },
+    {
+        id: 8,
+        title: 'Proyectos Especiales',
+        value: 'ProyectosEspeciales',
+    },
+    {
+        id: 9,
+        title: 'Tacómetro',
+        value: 'Tacometro',
+    },
+    {
+        id: 10,
+        title: 'Testers',
+        value: 'Testers',
+    },
+]
 
 const CheckBox = () => {
-    const [checked, setCheck] = useState(true);
+    const [checked, setChecked] = useState(
+        listItems.map((i) => false)
+    );
 
     const handleCheck = e => {
-        {checked ? handleShow(e) : console.log('jejewp')}
+        setChecked(!checked)
+        const result = e.target.value;
+        checked === true ? handleCategory(result) : handleAllCategory();
     }
 
-    const handleShow = e => {
-        const result = e.target.value;
-        const card = document.getElementsByClassName(`${result}`);
+    const handleCategory = value => {
+        const card = document.getElementsByClassName(value);
         const allCards = document.getElementsByClassName('container-card');
-        
+
         for(let i = 0; i < allCards.length; i++){
-            allCards[i].style.display = 'none';
-        }
-        for(let j = 0; j < card.length; j++){
-            card[j].style.display = 'block';
+            allCards[i].style.display = 'none'
         }
 
-        if(result === 'Todos'){
-            for(let i = 0; i < allCards.length; i++){
-                allCards[i].style.display = 'block';
+        for(let i = 0; i < card.length; i++){
+            if(card[i].classList.contains(value)){
+                card[i].style.display = 'block';
             }
+        }
+    }
+
+    const handleAllCategory = () => {
+        const allCards = document.getElementsByClassName('container-card');
+
+        for(let i = 0; i < allCards.length; i++){
+            allCards[i].style.display = 'block'
         }
     }
 
@@ -32,76 +92,16 @@ const CheckBox = () => {
     <>
         <Box sx={{padding: '1rem'}}>
             <FormGroup >
-                <FormControlLabel
-                    label='Todos los Productos'
-                    control={<Checkbox 
-                        value='Todos'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel
-                    label='BateasUltrasonido'
-                    control={<Checkbox 
-                        value='Batea'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel 
-                    label='Diagnostico Directo'
-                    control={<Checkbox 
-                        value='DiagnosticoDirecto'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel 
-                    label='Electrónica / Portones automáticos'
-                    control={<Checkbox 
-                        value='Porton'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel 
-                    label='Escáneres'
-                    control={<Checkbox 
-                        value='Escaner'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel 
-                    label='Escáneres Profesionales AUTEL'
-                    control={<Checkbox 
-                        value='EscanerProfesional'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel 
-                    label='GNC'
-                    control={<Checkbox 
-                        value='Gnc'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel 
-                    label='Proyectos Especiales'
-                    control={<Checkbox 
-                        value='ProyectosEspeciales'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel 
-                    label='Tacómetro'
-                    control={<Checkbox 
-                        value='Tacometro'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
-                <FormControlLabel 
-                    label='Testers'
-                    control={<Checkbox 
-                        value='Testers'
-                        onClick={(e) => handleCheck(e)}
-                    />
-                    }/>
+                {listItems.map((item) => {
+                    return(
+                        <FormControlLabel key={item.id} label={item.title} 
+                            control={<Checkbox 
+                                value={item.value}
+                                onChange={(e) => handleCheck(e)}
+                            />}
+                        />
+                    )
+                })}
             </FormGroup>
         </Box>
     </>
