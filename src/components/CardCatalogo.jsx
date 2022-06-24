@@ -3,6 +3,7 @@ import '../styles/Card.css';
 import { CardAllItems } from './items/CardAllItems';
 
 const CardCatalogo = () => {
+    
     return (
     <>
         <div className='card-section'>

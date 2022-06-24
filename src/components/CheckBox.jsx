@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Box, Checkbox, FormControlLabel, FormGroup } from '@mui/material';
 
 const listItems = [
@@ -55,37 +55,29 @@ const listItems = [
 ]
 
 const CheckBox = () => {
-    const [checked, setChecked] = useState(
-        listItems.map((i) => false)
-    );
+    let prod = [];
 
     const handleCheck = e => {
-        setChecked(!checked)
         const result = e.target.value;
-        checked === true ? handleCategory(result) : handleAllCategory();
-    }
+        const res = prod.find((item) => item === result);
+        const index = prod.findIndex((item) => item === res);
+        const card = document.getElementsByClassName(result);
 
-    const handleCategory = value => {
-        const card = document.getElementsByClassName(value);
-        const allCards = document.getElementsByClassName('container-card');
-
-        for(let i = 0; i < allCards.length; i++){
-            allCards[i].style.display = 'none'
-        }
-
-        for(let i = 0; i < card.length; i++){
-            if(card[i].classList.contains(value)){
-                card[i].style.display = 'block';
+        if(!res){
+            prod.push(result);
+            for(let i = 0; i < card.length; i++){
+                if(prod.includes(result) && card[i].classList.contains(result)){
+                    console.log('se muestra cards FILTRADAS')
+                }
+            }
+        } else {
+            prod.splice(index, 1);
+            if(!prod || prod === 'Todos'){
+                console.log('muestra TODAS las card')
             }
         }
-    }
+        console.log(prod)
 
-    const handleAllCategory = () => {
-        const allCards = document.getElementsByClassName('container-card');
-
-        for(let i = 0; i < allCards.length; i++){
-            allCards[i].style.display = 'block'
-        }
     }
 
     return (
