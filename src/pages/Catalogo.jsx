@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CardCatalogo from '../components/CardCatalogo';
 import CheckBox from '../components/CheckBox';
-// import FilterList from '../components/FilterList';
 import SliderCards from '../components/SliderCards';
 import '../styles/Catalogo.css';
 
 const Catalogo = () => {
+  const [filters, setFilters] = useState([])
+
   return (
     <>
       <h2 className='title-catalogo'>Catálogo</h2>
@@ -13,9 +14,9 @@ const Catalogo = () => {
       <div className="divider"></div>
       <div className="container-catalogo">
         <div className='filter-catalogo'>
-          <CheckBox />
+          <CheckBox filters={filters} setFilters={setFilters} />
         </div>
-        <CardCatalogo />
+        <CardCatalogo filters={filters} />
       </div>
     </>
   )

@@ -3,11 +3,6 @@ import { Box, Checkbox, FormControlLabel, FormGroup } from '@mui/material';
 
 const listItems = [
     {
-        id: 1,
-        title: 'Todos los Productos',
-        value: 'Todos',
-    },
-    {
         id: 2,
         title: 'Bateas Ultrasonido',
         value: 'Batea',
@@ -54,40 +49,35 @@ const listItems = [
     },
 ]
 
-const CheckBox = () => {
-    let prod = [];
+const CheckBox = ({filters, setFilters}) => {
 
     const handleCheck = e => {
-        const result = e.target.value;
-        const res = prod.find((item) => item === result);
-        const index = prod.findIndex((item) => item === res);
-        const card = document.getElementsByClassName(result);
-
-        if(!res){
-            prod.push(result);
-            for(let i = 0; i < card.length; i++){
-                if(prod.includes(result) && card[i].classList.contains(result)){
-                    console.log('se muestra cards FILTRADAS')
-                }
-            }
+        let Lfilters = [...filters]
+        if(filters.includes(e.target.value)) {
+            Lfilters = Lfilters.filter(filter => filter !== e.target.value)
         } else {
-            prod.splice(index, 1);
-            if(!prod || prod === 'Todos'){
-                console.log('muestra TODAS las card')
-            }
+            Lfilters.push(e.target.value)
         }
-        console.log(prod)
-
+        setFilters(Lfilters)
     }
 
     return (
     <>
         <Box sx={{padding: '1rem'}}>
             <FormGroup >
+                     <FormControlLabel key={'00'} label={'Todos Los Productos'} 
+                            control={
+                            <Checkbox
+                                checked={filters.length === 0}
+                                onChange={(e) => setFilters([])}
+                            />}
+                        />
                 {listItems.map((item) => {
                     return(
                         <FormControlLabel key={item.id} label={item.title} 
-                            control={<Checkbox 
+                            control={
+                            <Checkbox
+                                checked={filters.includes(item.value)}
                                 value={item.value}
                                 onChange={(e) => handleCheck(e)}
                             />}

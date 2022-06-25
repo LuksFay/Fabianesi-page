@@ -1,13 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Card.css';
 import { CardAllItems } from './items/CardAllItems';
 
-const CardCatalogo = () => {
-    
+const CardCatalogo = ({filters}) => {
+
+    const itemsFiltered = (Items) => {
+        console.log('The', Items)
+        console.log('The filters', filters)
+        if(filters?.length) {
+            return Items?.filter(item => filters?.includes(item.type))
+        } else {
+            return Items
+        }
+    }
+
     return (
     <>
         <div className='card-section'>
-            {CardAllItems.map(item => {
+            {itemsFiltered(CardAllItems).map(item => {
                 return(
                 <div className={`container-card ${item.type}`} key={item.id}>
                     <div className="img-card">
