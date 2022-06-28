@@ -1,11 +1,11 @@
-.slider-container{
+.slider__container{
     margin: 2rem 1rem;
 }
 
 .card{
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .3);
     border: 2px solid #000;
     border-radius: .3rem;
 }
@@ -18,17 +18,33 @@
     margin: 0 -10px;
 }
 
-.card-top img{
-    width: 150px;
+.card__top img{
+    width: 120px;
     margin: 0 auto;
 }
 
-.card-bottom{
-    color: #ccc;
+.card__bottom{
+    padding: 1rem 1rem 0;
+    color: #fff;
     text-align: center;
-    border-top: 2px solid #000;
 }
 
-.card-bottom h3{
+.card__bottom h3{
+    margin-bottom: .5rem;
+}
+
+.card__bottom__links{
     margin-top: .5rem;
+    padding: .3rem;
+}
+
+.card__bottom__links a{
+    margin: 0 1rem;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+    font-size: 1.3rem;
+}
+
+.card__bottom__links a:hover{
+    color: #ccc;
 }

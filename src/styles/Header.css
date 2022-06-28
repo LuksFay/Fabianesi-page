@@ -18,7 +18,7 @@
     margin: .5rem;
     padding: .5rem;
     font-weight: 600;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .8);
     border-radius: .3rem;
     transition: .3s all ease-in-out;
 }
@@ -33,7 +33,7 @@
 }
 
 .link__item:hover::after{
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, .8);
 }
 
 .MuiToolbar-root{
@@ -51,13 +51,12 @@
     display: block;
     width: 0%;
     padding-bottom: .3rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
     transition: .5s all ease-in-out;
 }
 
 .link__item:hover::after{
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, .8);
 }
 
 }

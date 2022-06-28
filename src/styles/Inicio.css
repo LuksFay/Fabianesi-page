@@ -24,25 +24,31 @@
     width: 100%;
     margin: 4rem 0;
     display: flex;
-    flex-wrap: wrap;
-    background-color: violet;
+    gap: 1rem;
 }
 
 .info__empresa,
 .map__empresa{
     width: 50%;
-    height: 100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .info__empresa{
-    background-color: lightblue;
+    padding: .5rem;
 }
 
 .map__empresa{
-    background-color: yellow;
+    padding: .5rem;
+}
+
+@media (max-width: 768px){
+
+.empresa__container{
+    flex-direction: column;
+}
+
+.info__empresa,
+.map__empresa{
+    width: 100%;
+}
+
 }

@@ -9,7 +9,6 @@ const Catalogo = () => {
 
   return (
     <>
-      <h2 className='title__catalogo'>Catálogo</h2>
       <SliderCards />
       <div className="container__catalogo">
         <div className='filter__catalogo'>

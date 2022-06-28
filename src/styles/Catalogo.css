@@ -1,7 +1,3 @@
-.title__catalogo{
-    margin: 1rem;
-}
-
 .container__catalogo{
     display: grid;
     grid-template-columns: 22rem auto;

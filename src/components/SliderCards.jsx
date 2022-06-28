@@ -1,9 +1,12 @@
 import React from 'react';
+import '../styles/SliderCards.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { CardSliderItems } from './items/CardSliderItems';
-import '../styles/SliderCards.css';
+import InfoIcon from '@mui/icons-material/Info';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
 
 const SliderCards = () => {
     const settings = {
@@ -46,18 +49,21 @@ const SliderCards = () => {
     };
     return (
     <>
-        <div className="slider-container">
+        <div className="slider__container">
             <Slider {...settings}>
                 {CardSliderItems.map(item => {
                     return(
                         <div className="card" key={item.id}>
-                            <div className="card-top">
+                            <div className="card__top">
                                 <img src={require('../assets/' + item.image + '.png')} alt={item.title}/>
                             </div>
-                            <div className="card-bottom">
+                            <div className="card__bottom">
                                 <h3>{item.title}</h3>
                                 <h4>${item.price}</h4>
-                                <h4>{item.type}</h4>
+                                <div className="card__bottom__links">
+                                  <Link to='/'><InfoIcon /></Link>
+                                  <Link to='/'><ShoppingCartIcon /></Link>
+                                </div>
                             </div>
                         </div>
                     )

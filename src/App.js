@@ -7,12 +7,14 @@ import Catalogo from './pages/Catalogo';
 import ThemeConfig from './components/materialConfig/ThemeConfig';
 import { Paper } from '@mui/material';
 import Footer from './components/commons/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
     <ThemeProvider theme={ThemeConfig}>
       <BrowserRouter>
+      <ScrollToTop />
         <Paper>
           <Header />
             <Routes>

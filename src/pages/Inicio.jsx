@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import { CardItemsHero } from '../components/items/CardItemsHero';
 import CardHero from '../components/cards/CardHero';
 import Button from '@mui/material/Button';
-// import Map from '../components/Map';
+import MapView from '../components/leafletMapComponents/MapView';
 // import ThemeConfig from '../components/materialConfig/ThemeConfig';
 
 const Inicio = () => {
@@ -39,7 +39,7 @@ const Inicio = () => {
         </Button>
     </div>
 
-    {/* <section className='empresa__container'>
+    <section className='empresa__container'>
         <div className='info__empresa'>
             <div className="text__empresa">
                 <h3 className='title__empresa'>Fabianesi Tools</h3>
@@ -47,9 +47,9 @@ const Inicio = () => {
             </div>
         </div>
         <div className="map__empresa">
-            <Map />
+            <MapView />
         </div>
-    </section> */}
+    </section>
     </>
   )
 }

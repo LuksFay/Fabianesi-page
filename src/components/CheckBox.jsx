@@ -21,7 +21,7 @@ const listItems = [
     {
         id: 3,
         title: 'Diagnostico Directo',
-        value: 'DiagnosticoDirecto',
+        value: 'Diagnostico Directo',
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ const listItems = [
     {
         id: 6,
         title: 'Escáneres Profesionales AUTEL',
-        value: 'EscanerProfesional',
+        value: 'Escaner Profesional',
     },
     {
         id: 7,
@@ -46,7 +46,7 @@ const listItems = [
     {
         id: 8,
         title: 'Proyectos Especiales',
-        value: 'ProyectosEspeciales',
+        value: 'Proyectos Especiales',
     },
     {
         id: 9,
