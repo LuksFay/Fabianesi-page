@@ -1,95 +1,26 @@
-.inicio-section{
-    margin: 5rem 0;
-    background-color: #ccc;
-}
-
-.title,
-.description,
-.btn-hero,
-.list{
-    margin: 1rem;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    justify-items: center;
+.inicio__section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.title,
-.description{
-    margin-bottom: .3rem;
-}
-
-.item-list{
-    list-style: circle;
-    margin: .5rem 1rem;
-}
-
-.btn-hero{
-    padding: .3rem;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    color: #000;
-    background: transparent;
-    border: .2rem solid #000;
-    border-radius: .3rem;
-    transition: .3s all ease-in-out;
-}
-
-.btn-hero:hover{
-    color: #fff;
-    background-color: #000;
-}
-
-.img-container{
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/escaneres/escaner_autolink_AL529.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    object-fit: cover;
-}
-
-.title-section-card{
-    margin: 1rem;
 }
 
 /* BUTTON LINK CATALOG */
 
-.btnLink-container{
+.btn__link__container{
     width: 100%;
     margin: 4rem 0;
     display: flex;
     justify-content: center;
 }
 
-.btn-link{
-    border: none;
-    outline: none;
-}
-
-.btn-link a{
-    font-size: 1.2rem;
-    padding: .5rem;
-    color: #000;
-    background-color: #fff;
-    border: .2rem solid #000;
-    border-radius: .3rem;
-    transition: .3s all ease-in-out;
-}
-
-.btn-link a:hover{
+.btn__link__container a{
     color: #fff;
-    background-color: #000;
 }
 
 /* SECTION EMPRESA */
 
-.empresa-container{
+.empresa__container{
     width: 100%;
     margin: 4rem 0;
     display: flex;
@@ -97,20 +28,21 @@
     background-color: violet;
 }
 
-.info-empresa,
-.map-empresa{
+.info__empresa,
+.map__empresa{
     width: 50%;
     height: 100%;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.info-empresa{
+.info__empresa{
     background-color: lightblue;
 }
 
-.map-empresa{
+.map__empresa{
     background-color: yellow;
 }

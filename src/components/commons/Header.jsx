@@ -6,7 +6,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Divider from '@mui/material/Divider';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import '../styles/Header.css';
+import LogoHeader from '../../assets/logo_fab.png';
+import '../../styles/Header.css';
 
 const LinksItems = [
   {
@@ -46,13 +47,15 @@ const Header = () => {
   return (
     <>
       <AppBar position='sticky' color='default'>
-        <h1 className='logo'>Fabianesi Tools</h1>
+        <div className="logo">
+          <img className='img__logo' src={LogoHeader} alt='FabianesiTools' />
+        </div>
           <Container maxWidth='md'>
             <Toolbar disableGutters>
               <Hidden smDown>
                 {LinksItems.map(item => {
                   return(
-                    <Link className='link-item' to={item.path} key={item.id}>
+                    <Link className='link__item' to={item.path} key={item.id}>
                       {item.title}
                     </Link>
                   )
@@ -78,7 +81,7 @@ const Header = () => {
             <Divider />
               {LinksItems.map(item => {
                 return(
-                  <Link className='link-item' to={item.path} key={item.id}>
+                  <Link className='link__item' to={item.path} key={item.id}>
                     {item.title}
                   </Link>
                 )

@@ -1,23 +1,19 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-// import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Header from './components/Header';
+import { ThemeProvider } from '@mui/material/styles';
+import Header from './components/commons/Header';
 import Inicio from './pages/Inicio';
 import Catalogo from './pages/Catalogo';
-// import Footer from './components/Footer';
-
-// const darkTheme = createTheme({
-//   palette: {
-//     mode: 'dark',
-//   },
-// });
+import ThemeConfig from './components/materialConfig/ThemeConfig';
+import { Paper } from '@mui/material';
+import Footer from './components/commons/Footer';
 
 function App() {
   return (
     <>
-    {/* <ThemeProvider theme={darkTheme}> */}
+    <ThemeProvider theme={ThemeConfig}>
       <BrowserRouter>
-        
+        <Paper>
           <Header />
             <Routes>
               <Route path='/' exact element={<Inicio />}/>
@@ -27,9 +23,10 @@ function App() {
               <Route path='/condicionesDeVenta' element={<Condiciones />}/>
               <Route path='/contacto' element={<Contacto />}/> */}
             </Routes>
-          {/* <Footer /> */}
+          <Footer />
+        </Paper>
       </BrowserRouter>
-    {/* </ThemeProvider> */}
+    </ThemeProvider>
     </>
   );
 }

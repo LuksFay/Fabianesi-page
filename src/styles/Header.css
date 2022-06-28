@@ -1,28 +1,39 @@
 .logo{
-    margin-top: 1rem;
+    margin-top: .5rem;
     text-align: center;
-  }
+}
+
+.img__logo{
+    width: 10rem;
+}
   
 .logo::after{
     content: '';
     display: block;
     width: 100%;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
-.link-item{
+.link__item{
     margin: .5rem;
     padding: .5rem;
     font-weight: 600;
-    color: #000;
-    border: 2px solid #000;
+    color: rgba(255, 255, 255, .7);
     border-radius: .3rem;
     transition: .3s all ease-in-out;
 }
 
-.link-item:hover{
-    color: #fff;
-    background-color: #202020;
+.link__item::after{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: .3s all ease-in-out;
+}
+
+.link__item:hover::after{
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
 .MuiToolbar-root{
@@ -34,4 +45,19 @@
 .MuiToolbar-root{
     justify-content: flex-end;
 }  
+
+.link__item::after{
+    content: '';
+    display: block;
+    width: 0%;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: .5s all ease-in-out;
+}
+
+.link__item:hover::after{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
 }

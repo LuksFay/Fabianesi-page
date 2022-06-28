@@ -1,5 +1,16 @@
 import React from 'react';
 import { Box, Checkbox, FormControlLabel, FormGroup } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { grey } from '@mui/material/colors';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    primary: {
+        main: grey[100],
+    },
+  },
+});
 
 const listItems = [
     {
@@ -63,29 +74,37 @@ const CheckBox = ({filters, setFilters}) => {
 
     return (
     <>
-        <Box sx={{padding: '1rem'}}>
-            <FormGroup >
-                     <FormControlLabel key={'00'} label={'Todos Los Productos'} 
-                            control={
-                            <Checkbox
-                                checked={filters.length === 0}
-                                onChange={(e) => setFilters([])}
-                            />}
-                        />
-                {listItems.map((item) => {
-                    return(
-                        <FormControlLabel key={item.id} label={item.title} 
-                            control={
-                            <Checkbox
-                                checked={filters.includes(item.value)}
-                                value={item.value}
-                                onChange={(e) => handleCheck(e)}
-                            />}
-                        />
-                    )
-                })}
-            </FormGroup>
-        </Box>
+        <ThemeProvider theme={darkTheme}>
+            <Box component='div' sx={{
+                    position: 'sticky',
+                    margin: '1rem',
+                    top: '9rem',
+                }}>
+                <FormGroup>
+                        <FormControlLabel key={'00'} label={'Todos Los Productos'} 
+                                control={
+                                <Checkbox
+                                    color='primary'
+                                    checked={filters.length === 0}
+                                    onChange={(e) => setFilters([])}
+                                />}
+                            />
+                    {listItems.map((item) => {
+                        return(
+                            <FormControlLabel key={item.id} label={item.title} 
+                                control={
+                                <Checkbox
+                                    color='primary'
+                                    checked={filters.includes(item.value)}
+                                    value={item.value}
+                                    onChange={(e) => handleCheck(e)}
+                                />}
+                            />
+                        )
+                    })}
+                </FormGroup>
+            </Box>
+        </ThemeProvider>
     </>
     )
 }

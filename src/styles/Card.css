@@ -1,69 +1,94 @@
 /* CARD SECTION */
 
-.card-section{
+.card__section{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.container-card{
-    width: 300px;
-    border: .2rem solid #000;
-    border-radius: .3rem;
-}
-
-.img-card{
-    width: 100%;
-    height: 300px;
+.product__card{
+    width: 380px;
     position: relative;
-    background-color: #ccc;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 1rem 0;
+    background: #fafafa;
 }
 
-.img-card img{
-    position: absolute;
-    width: 100%;
-}
-
-.info-card{
+.product__tumb{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    background-color: #ddd;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
 }
 
-.title-card,
-.price-card{
-    font-size: 1.2rem;
-    font-weight: bold;
+.product__tumb img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product__details{
+    padding: 30px;
+}
+
+.product__category{
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
-    word-wrap: normal;
-}
-
-.buttons-card{
-    width: 100%;
-    margin-bottom: .5rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.more-button,
-.buy-button{
-    font-size: 1.1rem;
-    padding: .5rem;
-    background-color: #ccc;
-    border: .2rem solid #000;
-    border-radius: .3rem;
-    transition: .3s all ease-in-out;
-}
-
-.more-card:hover,
-.buy-card:hover{
     color: #ccc;
-    background-color: #000;
+    margin-bottom: 18px;
 }
 
+.product__details h3{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product__details p{
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product__bottom__details{
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product__bottom__details div{
+    float: left;
+    width: 50%;
+}
+
+.product__price{
+    font-size: 18px;
+    color: #363636;
+    font-weight: 600;
+}
+
+.product__links{
+    text-align: right;
+}
+
+.product__links a{
+    display: inline-block;
+    margin-left: 5px;
+    color: #363636;
+    transition: 0.3s all ease-in-out;
+    font-size: 17px;
+}
+
+.product__links a:hover{
+    color: #999;
+}

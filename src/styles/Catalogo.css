@@ -1,26 +1,19 @@
-.title-catalogo{
+.title__catalogo{
     margin: 1rem;
 }
 
-.divider{
-    width: 100%;
-    height: 5rem;
-    margin: 3rem 0;
-    background-color: #ccc;
-}
-
-.container-catalogo{
+.container__catalogo{
     display: grid;
     grid-template-columns: 22rem auto;
 }
 
 @media (max-width: 768px){
 
-.container-catalogo{
+.container__catalogo{
     display: block;
 }
 
-.filter-catalogo{
+.filter__catalogo{
     margin: 1rem 0;
 }
 
