@@ -21,7 +21,7 @@ const Card = (props) => {
                         <div className="product__bottom__details">
                             <div className="product__price">{'$' + item.price}</div>
                             <div className="product__links">
-                                <Link to='/'><InfoIcon /></Link>
+                                <Link to={'/' + item.id}><InfoIcon /></Link>
                                 <Link to='/'><ShoppingCartIcon /></Link>
                             </div>
                         </div>

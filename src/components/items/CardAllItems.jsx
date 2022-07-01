@@ -3,6 +3,80 @@ export const CardAllItems = [
         id: 1,
         image: 'bateas_ultrasonidos/batea_ultrasonica_baku_serie_Dadi',
         title: 'Batea Ultrasonica Baku Serie Dadi 6 Litros Inoxidable',
+        descr: 'Se utiliza para limpieza de propósito general, para circuitos electrónicos de PCB, limpia joyas, diamantes, gafas, partes de relojes, partes de automotores,  telefonía celular, instrumental quirúrgico, etc. Es rápido y fácil de usar.',
+        use: 'Poner en la bandeja interior el producto a limpiar, llenar con agua (se puede usar según sea el caso, alcohol isopropílico, detergentes ,solución de clorhexidina) reemplazar el liquido si el producto esta muy sucio. Importante: en caso de material quirurgico medico, se recomienda esterilizar con autoclave posterior a la limpieza o poner soluciones desinfectantes en el recipiente.',
+        example: [
+            {
+                id: 1,
+                content: 'Automotor: Limpieza de Inyectores (Diesel o nafteros), bombas eléctricas, etc.',
+            },
+            {
+                id: 2,
+                content: 'Cirugía: Limpiezas de herramientas: catéter, sondas, etc.',
+            },
+            {
+                id: 3,
+                content: 'Electrónica: Limpieza de placas de circuitos impresos, contactos electrónicos, terminales, etc.',
+            },
+            {
+                id: 4,
+                content: 'Industria mecánica: Lavado de piezas de tornería automática, piezas estampadas en plásticos o resinas, rodamientos, válvulas, etc.',
+            },
+            {
+                id: 5,
+                content: 'Informática: Limpieza de mecanismo de impresoras, circuitos impresos, cabezas de impresoras, cartuchos INK-JET, etc.',
+            },
+            {
+                id: 6,
+                content: 'Joyería: Limpiezas de joyas y piedras preciosas, cadenas, collares, mallas de relojes, mecanismos de precisión, etc.',
+            },
+            {
+                id: 7,
+                content: 'Óptica: Limpieza de lentes de contacto, armazones de lentes, instrumental quirúrgico, etc.',
+            },
+            {
+                id: 8,
+                content: 'Odontología: Limpieza de herramientas e instrumental utilizado, vidrios, cerámicas, plásticos, fresas, prótesis, coronas, puentes, eliminación de yesos, remoción de cementos, etc.',
+            },
+            {
+                id: 9,
+                content: 'Relojería: Limpiezas de mecanismos y pulseras de relojes.',
+            },
+            {
+                id: 10,
+                content: 'Service: Lavado de piezas mecánicas y electrónicas de teléfonos móviles, video cámaras o suciedades orgánicas de plaquetas electrónicas, etc.',
+            },
+        ],
+        specs: [
+            {
+                id: 1,
+                content: 'Potencia 200 Watts',
+            },
+            {
+                id: 2,
+                content: 'Voltaje de operación: 220V',
+            },
+            {
+                id: 3,
+                content: 'Frecuencia:40 khz',
+            },
+            {
+                id: 4,
+                content: 'Drenaje: si',
+            },
+            {
+                id: 5,
+                content: 'Canastilla: si',
+            },
+            {
+                id: 6,
+                content: 'Temperatura máxima de calentamiento del líquido : 40°C',
+            },
+            {
+                id: 7,
+                content: 'Material: Acero Inoxidable',
+            }
+        ],
         price: '62.900,00',
         type: 'Batea',
     },
@@ -31,6 +105,7 @@ export const CardAllItems = [
         id: 5,
         image: 'diagnostico_directo/arranque_asistido_motores',
         title: 'Arranque Asistido de Motores',
+        descr: 'El software de Control de Arranque Asistido de Motores para Motor Virtual, se utiliza para arrancar el motor del vehiculo sin el uso de la ECU de gasolina.  Este sistema es muy útil cuando se quiere diagnosticar un vehículo que no arranca por problemas de Electrónica y se necesita verificar el sistema mecánico.',
         price: '15.692,00',
         type: 'Diagnostico Directo',
     },
@@ -389,7 +464,7 @@ export const CardAllItems = [
         image: 'proyectos_especiales/sistema_Bi-Fuel',
         title: 'Sistema Bi-Fuel',
         price: '?',
-        type: 'ProyectosEspeciales',
+        type: 'Proyectos Especiales',
     },
     {
         id: 57,

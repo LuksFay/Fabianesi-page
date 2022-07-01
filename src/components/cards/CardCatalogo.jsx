@@ -8,8 +8,6 @@ import { Link } from 'react-router-dom';
 const CardCatalogo = ({filters}) => {
 
     const itemsFiltered = (Items) => {
-        console.log('The', Items)
-        console.log('The filters', filters)
         if(filters?.length) {
             return Items?.filter(item => filters?.includes(item.type))
         } else {
@@ -33,7 +31,7 @@ const CardCatalogo = ({filters}) => {
                         <div className="product__bottom__details">
                             <div className="product__price">{'$' + item.price}</div>
                             <div className="product__links">
-                                <Link to='/'><InfoIcon /></Link>
+                                <Link to={'/' + item.id}><InfoIcon /></Link>
                                 <Link to='/'><ShoppingCartIcon /></Link>
                             </div>
                         </div>

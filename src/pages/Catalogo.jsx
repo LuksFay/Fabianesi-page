@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CardCatalogo from '../components/cards/CardCatalogo';
 import CheckBox from '../components/CheckBox';
-import SliderCards from '../components/SliderCards';
+import SliderCards from '../components/cards/SliderCards';
 import '../styles/Catalogo.css';
 
 const Catalogo = () => {

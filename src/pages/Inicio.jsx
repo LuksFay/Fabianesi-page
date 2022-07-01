@@ -1,9 +1,10 @@
 import React from 'react';
 import '../styles/Inicio.css';
-import Card from '../components/cards/Card';
 import {Link} from 'react-router-dom';
-import { CardItemsHero } from '../components/items/CardItemsHero';
+import Card from '../components/cards/Card';
 import CardHero from '../components/cards/CardHero';
+import { CardItemsHero } from '../components/items/CardItemsHero';
+import { CardItemsBest } from '../components/items/CardItemsBest';
 import Button from '@mui/material/Button';
 import MapView from '../components/leafletMapComponents/MapView';
 // import ThemeConfig from '../components/materialConfig/ThemeConfig';
@@ -11,35 +12,36 @@ import MapView from '../components/leafletMapComponents/MapView';
 const Inicio = () => {
   return (
     <>
-    <section className='inicio__section'>
+    <section className='hero__section'>
         <CardHero />
     </section>
 
-    <h2 className="title__section__card">Nuevos Productos</h2>
+    <section className="new__product__section">
+        <h2 className="title__section__card">Nuevos Productos</h2>
+        <Card items={CardItemsHero}/>
+        <div className="btn__link__container">
+            <Button color="primary" variant="contained" size="large">
+                <Link to={'/catalogo'}>
+                    Ver Catálogo
+                </Link>
+            </Button>
+        </div>
+    </section>
 
-    <Card items={CardItemsHero}/>
+    <section className="important__product__section">
+        <h2 className="title__section__card">Productos Destacados</h2>
+        <Card items={CardItemsBest}/>
+        <div className="btn__link__container">
+            <Button variant="contained" size="large">
+                <Link to={'/catalogo'}>
+                    Ver Catálogo
+                </Link>
+            </Button>
+        </div>
+    </section>
 
-    <div className="btn__link__container">
-        <Button color="primary" variant="contained" size="large">
-            <Link to={'/catalogo'}>
-                Ver Catálogo
-            </Link>
-        </Button>
-    </div>
 
-    <h2 className="title__section__card">Productos Destacados</h2>
-
-    <Card items={CardItemsHero}/>
-
-    <div className="btn__link__container">
-        <Button variant="contained" size="large">
-            <Link to={'/catalogo'}>
-                Ver Catálogo
-            </Link>
-        </Button>
-    </div>
-
-    <section className='empresa__container'>
+    <section className='empresa__section'>
         <div className='info__empresa'>
             <div className="text__empresa">
                 <h3 className='title__empresa'>Fabianesi Tools</h3>

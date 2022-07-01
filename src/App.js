@@ -8,6 +8,7 @@ import ThemeConfig from './components/materialConfig/ThemeConfig';
 import { Paper } from '@mui/material';
 import Footer from './components/commons/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import InfoCardDetail from './pages/InfoCardDetail';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
               <Route path='/envios' element={<Envios />}/>
               <Route path='/condicionesDeVenta' element={<Condiciones />}/>
               <Route path='/contacto' element={<Contacto />}/> */}
+              {/* DETAIL PRODUCTS CARD PAGE */}
+              <Route path='/:card_id'  element={<InfoCardDetail />}/>
             </Routes>
           <Footer />
         </Paper>
