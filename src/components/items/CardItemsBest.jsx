@@ -14,7 +14,7 @@ export const CardItemsBest = [
         type: 'Gnc',
     },
     {
-        id: 59,
+        id: 58,
         image: 'testers/multimetro_digital_DT182',
         title: 'Multimetro Digital DT182',
         price: '680,00',

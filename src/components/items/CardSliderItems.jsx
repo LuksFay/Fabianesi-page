@@ -42,14 +42,14 @@ export const CardSliderItems = [
         type: 'Gnc',
     },
     {
-        id: 57,
+        id: 56,
         image: 'tacometro/tacometro_digital_DT6236',
         title: 'Tacometro Digital DT6236',
         price: '3.508,00',
         type: 'Tacometro',
     },
     {
-        id: 63,
+        id: 62,
         image: 'testers/multimetro_digital_MY68T',
         title: 'Multimetro Digital MY68T',
         price: '4.391,00',
