@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 
 const CardCatalogo = ({filters}) => {
 
+    
+
     const itemsFiltered = (Items) => {
         if(filters?.length) {
             return Items?.filter(item => filters?.includes(item.type))
@@ -14,7 +16,6 @@ const CardCatalogo = ({filters}) => {
             return Items
         }
     }
-
     return (
     <>
         <div className='card__section'>
@@ -27,21 +28,25 @@ const CardCatalogo = ({filters}) => {
                     <div className="product__details">
                         <span className="product__category">{item.type}</span>
                         <h3>{item.title}</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, dicta?</p>
+                        {/* <p>{item.descr.toString()}</p> */}
                         <div className="product__bottom__details">
                             <div className="product__price">{'$' + item.price}</div>
                             <div className="product__links">
                                 <Link to={'/' + item.id}><InfoIcon /></Link>
-                                <Link to='/'><ShoppingCartIcon /></Link>
+                                <a href={`https://api.whatsapp.com/send?phone=+543412019025&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%20Quisiera%20continuar%20con%20la%20compra%20del%20siguiente%20producto:%20*${item.title}*`}target='_blank'><ShoppingCartIcon /></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 )
-            })}       
+               
+            })}     
+            <a href=""></a>  
         </div>
     </>
   )
 }
 
 export default CardCatalogo
+
+//https://api.whatsapp.com/send?phone=+543412019025&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%20Quisiera%20continuar%20con%20la%20compra%20de%20los%20siguientes%20productos:%20*producto*,%20*producto*

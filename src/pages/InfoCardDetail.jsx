@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { CardAllItems } from '../components/items/CardAllItems';
+import '../styles/InfoCardDetails.css'
 
 const InfoCardDetail = () => {
     const [id, setId] = useState(null);
@@ -29,15 +30,27 @@ const InfoCardDetail = () => {
                             <div className="imgBox__detail">
                                 <img src={require('../assets/' + item.image + '.png')} alt={item.title} />
                             </div>
+                            
                             <div className="detail__card__info">
                                 <div className="content__card__detail">
-                                    <p>{item.type}</p>
-                                    <h3>{item.title}</h3>
-                                    <p>{item.descr}</p>
-                                    <p>{item.price}</p>
+                                    <div className='detail__card__group'>
+                                        <p>{item.type}</p>
+                                        <h2>{item.title}</h2>
+                                        <p className='item__price'>${item.price}</p>
+                                        <p>{item.descr}</p>
+                                    </div>
+                                    <div className='detail__buttons__group'>
+                                        <a href={`https://api.whatsapp.com/send?phone=+543412019025&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%20Quisiera%20continuar%20con%20la%20compra%20del%20siguiente%20producto:%20*${item.title}*`}target='_blank'>
+                                            <button href='www.google.com' className='detail__buttons detail__buy__now'>Comprar Ahora</button>
+                                        </a>
+                                        <button className='detail__buttons detail__buy__later'>Agregar al carrito</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="detail__card__sepcs">
+                            
+                            <div className='detail__extra__info'>
+                             <div className="detail__card__sepcs">
+                                <h3>Especificaciones</h3>
                                 <p>{item.use}</p>
                                 {item.specs.map(i => {
                                     return (
@@ -48,6 +61,7 @@ const InfoCardDetail = () => {
                                 })}
                             </div>
                             <div className="detail__card__sepcs">
+                                <h3>Información Extra</h3>
                                 {item.example.map(i => {
                                     return (
                                         <li key={i.id}>
@@ -55,6 +69,7 @@ const InfoCardDetail = () => {
                                         </li>
                                     )
                                 })}
+                            </div>
                             </div>
                         </div>
                     )
