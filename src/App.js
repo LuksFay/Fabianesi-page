@@ -9,6 +9,7 @@ import { Paper } from '@mui/material';
 import Footer from './components/commons/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import InfoCardDetail from './pages/InfoCardDetail';
+import ShoppingCart from './pages/ShoppingCart';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path='/contacto' element={<Contacto />}/> */}
               {/* DETAIL PRODUCTS CARD PAGE */}
               <Route path='/:card_id'  element={<InfoCardDetail />}/>
+              <Route path='/carrito'  element={<ShoppingCart />}/>
             </Routes>
           <Footer />
         </Paper>
