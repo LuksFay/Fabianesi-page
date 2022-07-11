@@ -96,3 +96,12 @@
 .product__links a:hover{
     color: #999;
 }
+
+.product__links span{
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.product__links span:hover{
+    color: #999;
+}

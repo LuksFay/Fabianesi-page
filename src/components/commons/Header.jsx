@@ -40,6 +40,12 @@ const LinksItems = [
     title: "Contacto",
     path: "./contacto",
   },
+  {
+    id: 7,
+    title: "Carrito",
+    path: "./carrito",
+    linkClass: "link-item",
+  },
 ];
 
 const Header = () => {
