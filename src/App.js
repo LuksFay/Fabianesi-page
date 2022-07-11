@@ -31,6 +31,17 @@ function App() {
     }
   };
 
+  const handleRemoveProduct = (product) =>{
+    const ProductExist = cartItems.find((item) => item.id === product.id);
+    if(ProductExist.quantity === 1){
+      setCartItems(cartItems.filter((item) => item.id !== product.id))
+    } else{
+      setCartItems(
+        cartItems.map((item) => item.id === product.id ? {...ProductExist, quantity: ProductExist.quantity - 1} : item)
+      )
+    }
+  }
+
   return (
     <>
     <ThemeProvider theme={ThemeConfig}>
@@ -47,7 +58,12 @@ function App() {
               <Route path='/contacto' element={<Contacto />}/> */}
               {/* DETAIL PRODUCTS CARD PAGE */}
               <Route path='/:card_id'  element={<InfoCardDetail />}/>
-              <Route path='/carrito'  element={<ShoppingCart cartItems={cartItems} />} />
+              <Route path='/carrito'  element={
+                <ShoppingCart 
+                cartItems={cartItems}
+                handleAddProduct={handleAddProduct} 
+                handleRemoveProduct={handleRemoveProduct}/>
+                } />
             </Routes>
           <Footer />
         </Paper>

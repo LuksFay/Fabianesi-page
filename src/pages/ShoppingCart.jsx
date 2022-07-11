@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const ShoppingCart = ( { cartItems } ) => {
+const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct } ) => {
 
   return (
     <>
@@ -15,8 +15,14 @@ const ShoppingCart = ( { cartItems } ) => {
           <div>
             {cartItems.map((item)=>(
               <div key={item.id} className="cart-items-list">
-                <p>{item.title}</p>
                 <img  className='cart-items-image' src={require('../assets/' + item.image + '.png')} alt={item.title} />
+                <div className='cart-item-name'>
+                {item.title}
+                </div>
+                <div className='cart-items-function'>
+                  <button className='cart-items-add' onClick={()=>handleAddProduct(item) }>+</button>
+                  <button className='cart-items-remove' onClick={()=>handleRemoveProduct(item) }>-</button>
+                </div>
                 <p>$ {item.price}</p>
               </div>
             ))}
