@@ -1,37 +1,27 @@
-import React, { useReducer } from 'react';
-import CartItem from '../components/cart/CartItem';
-import {
-  shoppingInitialState,
-  shoppingReducer
-} from '../reducers/shoppingReducer';
+import React from 'react';
 
 
 
-const ShoppingCart = () => {
+const ShoppingCart = ( { cartItems } ) => {
 
-  const [state,dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-
-  const {products, cart} = state;
-
-  const delFromCart = ()=> {
-    
-  }
-                
-  const clearCart = ()=> {
-                  
-  }
-  
   return (
     <>
-      <div className="container__shopping__cart">
-        <h2>Shopping Cart</h2>
-        <div>
-          <button>Vaciar Carrito</button>
-          {
-            cart.map((item, index) => <CartItem key={index} data={item} delFromCart={delFromCart} />)
-          }
+        <div className='cart-items'>
+          <div className='cart-items-header'>Cart Items</div>
+
+          {cartItems.length === 0 && (
+           <div className='cart-items-empty'>No items are added.</div>
+          )}
+          <div>
+            {cartItems.map((item)=>(
+              <div key={item.id} className="cart-items-list">
+                <p>{item.title}</p>
+                <img  className='cart-items-image' src={require('../assets/' + item.image + '.png')} alt={item.title} />
+                <p>$ {item.price}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
     </>
   )
 }

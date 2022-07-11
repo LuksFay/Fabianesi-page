@@ -4,19 +4,10 @@ import { CardAllItems } from '../items/CardAllItems';
 import InfoIcon from '@mui/icons-material/Info';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
-import {
-    shoppingInitialState,
-    shoppingReducer
-  } from '../../reducers/shoppingReducer';
-import { TYPES } from '../../actions/shoppingAction';
   
 
 
-const CardCatalogo = ({filters}) => {
-
-    const [state,dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-
-    const {products, cart} = state;
+const CardCatalogo = ({filters, handleAddProduct}) => {
 
 
     const itemsFiltered = (Items) => {
@@ -30,13 +21,7 @@ const CardCatalogo = ({filters}) => {
     <>
         <div className='card__section'>
             {itemsFiltered(CardAllItems).map(item => {
-                 
-                const addToCart = ()=> {
-                    dispatch({type:TYPES.ADD_TO_CART, payload:item.id})
-                  }
-                  
-                
-
+        
                 return(
                 <div className={`product__card ${item.type}`} key={item.id}>
                     <div className="product__tumb">
@@ -49,7 +34,7 @@ const CardCatalogo = ({filters}) => {
                             <div className="product__price">{'$' + item.price}</div>
                             <div className="product__links">
                                 <Link to={'/' + item.id}><InfoIcon /></Link>
-                                <span onClick={addToCart}><ShoppingCartIcon/></span>
+                                <span onClick={() => handleAddProduct(item)}><ShoppingCartIcon/></span>
                             </div>
                         </div>
                     </div>

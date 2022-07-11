@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
@@ -12,6 +13,24 @@ import InfoCardDetail from './pages/InfoCardDetail';
 import ShoppingCart from './pages/ShoppingCart';
 
 function App() {
+
+  const [cartItems, setCartItems] = useState([]);
+
+  const handleAddProduct = (product) => {
+    const ProductExist = cartItems.find((item) => item.id === product.id);
+    if(ProductExist){
+      setCartItems(
+        cartItems.map((item)=>
+        item.id === product.id
+        ? {...ProductExist, quantity: ProductExist.quantity + 1}
+        : item
+        )
+      );
+    } else {
+      setCartItems([...cartItems, {...product, quantity: 1}]);
+    }
+  };
+
   return (
     <>
     <ThemeProvider theme={ThemeConfig}>
@@ -21,14 +40,14 @@ function App() {
           <Header />
             <Routes>
               <Route path='/' exact element={<Inicio />}/>
-              <Route path='/catalogo' element={<Catalogo />}/>
+              <Route path='/catalogo' element={<Catalogo handleAddProduct={handleAddProduct} />}/>
               {/* <Route path='/empresa' element={<Empresa />}/>
               <Route path='/envios' element={<Envios />}/>
               <Route path='/condicionesDeVenta' element={<Condiciones />}/>
               <Route path='/contacto' element={<Contacto />}/> */}
               {/* DETAIL PRODUCTS CARD PAGE */}
               <Route path='/:card_id'  element={<InfoCardDetail />}/>
-              <Route path='/carrito'  element={<ShoppingCart />}/>
+              <Route path='/carrito'  element={<ShoppingCart cartItems={cartItems} />} />
             </Routes>
           <Footer />
         </Paper>
