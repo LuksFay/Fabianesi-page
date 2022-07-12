@@ -1,9 +1,13 @@
 import React from 'react';
-
+import '../styles/ShoppingCart.css'
 
 
 const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct } ) => {
 
+  const totalPrice = cartItems.reduce(
+    (price, item) => price + item.quantity * item.price,
+     0
+     );
   return (
     <>
         <div className='cart-items'>
@@ -23,9 +27,15 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct } ) =>
                   <button className='cart-items-add' onClick={()=>handleAddProduct(item) }>+</button>
                   <button className='cart-items-remove' onClick={()=>handleRemoveProduct(item) }>-</button>
                 </div>
-                <p>$ {item.price}</p>
+                <div className='cart-item-price'> {item.quantity} * ${item.price}</div>
               </div>
             ))}
+            <div className='cart-items-total-price-name'>
+              Total Price
+              <div className='cart-Items-total-price'>
+                ${totalPrice}
+              </div>
+            </div>
           </div>
         </div>
     </>
