@@ -79,3 +79,6 @@ function App() {
 }
 
 export default App;
+
+
+// encontrar la manera de pasar como prop a el link "carrito" en navbar el state de cartItem. 48:25
