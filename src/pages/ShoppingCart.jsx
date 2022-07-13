@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/ShoppingCart.css'
 
 
-const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct } ) => {
+const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance } ) => {
 
   const totalPrice = cartItems.reduce(
     (price, item) => price + item.quantity * item.price,
@@ -11,7 +11,12 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct } ) =>
   return (
     <>
         <div className='cart-items'>
-          <div className='cart-items-header'>Cart Items</div>
+          <h2 className='cart-items-header'>Cart Items</h2>
+          <div className='clear-cart'>
+            {cartItems.length >=1 && (
+              <button className='clear-cart-button' onClick={handleCartClearance}>Clear Cart</button>
+            )}
+          </div>
 
           {cartItems.length === 0 && (
            <div className='cart-items-empty'>No items are added.</div>
@@ -32,7 +37,7 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct } ) =>
             ))}
             <div className='cart-items-total-price-name'>
               Total Price
-              <div className='cart-Items-total-price'>
+              <div className='cart-items-total-price'>
                 ${totalPrice}
               </div>
             </div>

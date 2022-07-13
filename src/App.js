@@ -42,13 +42,17 @@ function App() {
     }
   }
 
+  const handleCartClearance = () => {
+    setCartItems([]);
+  }
+
   return (
     <>
     <ThemeProvider theme={ThemeConfig}>
       <BrowserRouter>
       <ScrollToTop />
         <Paper>
-          <Header />
+          <Header cartItems={cartItems} />
             <Routes>
               <Route path='/' exact element={<Inicio />}/>
               <Route path='/catalogo' element={<Catalogo handleAddProduct={handleAddProduct} />}/>
@@ -62,7 +66,8 @@ function App() {
                 <ShoppingCart 
                 cartItems={cartItems}
                 handleAddProduct={handleAddProduct} 
-                handleRemoveProduct={handleRemoveProduct}/>
+                handleRemoveProduct={handleRemoveProduct}
+                handleCartClearance={handleCartClearance} />
                 } />
             </Routes>
           <Footer />
