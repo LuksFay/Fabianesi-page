@@ -40,9 +40,15 @@ const LinksItems = [
     title: "Contacto",
     path: "./contacto",
   },
+  {
+    id: 7,
+    title: "Carrito",
+    path: "./carrito",
+    linkClass: "link-item",
+  },
 ];
 
-const Header = () => {
+const Header = ({cartItems}) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -60,6 +66,9 @@ const Header = () => {
                     </Link>
                   )
                 })}
+                <span className='cart-length'>
+                  {cartItems.length === 0 ? "" : cartItems.length }
+                </span>
               </Hidden>
               <Hidden smUp>
                 <IconButton onClick={() => setOpen(true)}>
@@ -86,6 +95,9 @@ const Header = () => {
                   </Link>
                 )
               })}
+              <span className='cart-length-mobile'>
+                  {cartItems.length === 0 ? "" : cartItems.length }
+                </span>
           </SwipeableDrawer>
       </AppBar>
     </>
@@ -93,3 +105,5 @@ const Header = () => {
 }
 
 export default Header
+
+//crear un div y ubicarlo con css para ubicarlo al lado de link carrito 

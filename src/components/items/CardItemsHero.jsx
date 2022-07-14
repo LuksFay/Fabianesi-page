@@ -20,11 +20,4 @@ export const CardItemsHero = [
         price: '32.104,00',
         type: 'Escaner',
     },
-    {
-        id: 16,
-        image: 'escaneres/escaner_autolink_AL529',
-        title: 'Escaner Autolink AL529HD',
-        price: '31.821,00',
-        type: 'Escaner',
-    },
 ]

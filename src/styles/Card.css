@@ -80,7 +80,9 @@
 }
 
 .product__links{
-    text-align: right;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
 }
 
 .product__links a{
@@ -92,5 +94,14 @@
 }
 
 .product__links a:hover{
+    color: #999;
+}
+
+.product__links span{
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.product__links span:hover{
     color: #999;
 }

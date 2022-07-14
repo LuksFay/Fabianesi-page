@@ -78,7 +78,7 @@ export const CardAllItems = [
                 content: 'Material: Acero Inoxidable',
             },
         ],
-        price: '62.900,00',
+        price: 62900,
         type: 'Batea',
     },
     {
@@ -99,7 +99,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '30.317,00',
+        price: 30317,
         type: 'Batea',
     },
     {
@@ -180,7 +180,7 @@ export const CardAllItems = [
                 content: 'Medida de la cubeta: 140*70*55 mm',
             },
         ],
-        price: '9.250,00',
+        price: 9250,
         type: 'Batea',
     },
     {
@@ -262,7 +262,7 @@ export const CardAllItems = [
                 content: 'Medida de la cubeta: 140*70*55 mm',
             },
         ],
-        price: '6.475,00',
+        price: 6475,
         type: 'Batea',
     },
     {
@@ -283,7 +283,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '15.692,00',
+        price: 15692,
         type: 'Diagnostico Directo',
     },
     {
@@ -327,7 +327,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '59.139,00',
+        price: 59139,
         type: 'Diagnostico Directo',
     },
     {
@@ -348,7 +348,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '28.400,00',
+        price: 28400,
         type: 'Diagnostico Directo',
     },
     {
@@ -389,7 +389,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '22.176,00',
+        price: 22176,
         type: 'Diagnostico Directo',
     },
     {
@@ -410,7 +410,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.400,00',
+        price: 4400,
         type: 'Diagnostico Directo',
     },
     {
@@ -463,7 +463,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.400,00',
+        price: 4400,
         type: 'Diagnostico Directo',
     },
     {
@@ -532,7 +532,7 @@ export const CardAllItems = [
                 content: '0,105 kg NW (0.23lb), GW: 0726 kg (1.6lb)+',
             },
         ],
-        price: '18.000,00',
+        price: 18000,
         type: 'Diagnostico Directo',
     },
     {
@@ -633,7 +633,7 @@ export const CardAllItems = [
                 content: 'Alimentación externa: De 8,0 a 18,0 V de potencia suministrados por batería de vehículo',
             },
         ],
-        price: '9.282,00',
+        price: 9282,
         type: 'Escaner',
     },
     {
@@ -758,7 +758,7 @@ export const CardAllItems = [
                 content: 'Alimentación externa: De 8,0 a 18,0 V de potencia suministrados por batería de vehículo',
             },
         ],
-        price: '21.315,00',
+        price: 21315,
         type: 'Escaner',
     },
     {
@@ -875,7 +875,7 @@ export const CardAllItems = [
                 content: 'Alimentación externa: De 8,0 a 18,0 V de potencia suministrados por batería de vehículo',
             },
         ],
-        price: '32.104,00',
+        price: 32104,
         type: 'Escaner',
     },
     {
@@ -996,7 +996,7 @@ export const CardAllItems = [
                 content: 'Peso: 242g',
             },
         ],
-        price: '31.821,00',
+        price: 31821,
         type: 'Escaner',
     },
     {
@@ -1109,7 +1109,7 @@ export const CardAllItems = [
                 content: 'Peso: 313 g (0.69 lb.)',
             },
         ],
-        price: '58.132,00',
+        price: 58132,
         type: 'Escaner',
     },
     {
@@ -1206,7 +1206,7 @@ export const CardAllItems = [
                 content: 'Alimentación externa: De 8,0 a 18,0 V de potencia suministrados por batería de vehículo',
             },
         ],
-        price: '35.213,00',
+        price: 35213,
         type: 'Escaner',
     },
     {
@@ -1331,7 +1331,7 @@ export const CardAllItems = [
                 content: 'Humedad de funcionamiento: 5% a 95% sin condensación',
             },
         ],
-        price: '74.900,00',
+        price: 74900,
         type: 'Escaner Profesional',
     },
     {
@@ -1492,7 +1492,7 @@ export const CardAllItems = [
                 content: 'Protocolos: SAE J1939; SAE J1708; Manufacturer customized J1939; Manufacturer customized J1708; KWP; VPW; UDS-CAN; CDL',
             },
         ],
-        price: '496.000,00',
+        price: 496000,
         type: 'Escaner Profesional',
     },
     {
@@ -1657,7 +1657,7 @@ export const CardAllItems = [
                 content: 'Dimensiones: 270.8 mm (10.0”) x 176.0 mm (6.9”) x 36.0mm (1.4”)',
             },
         ],
-        price: '240.000,00',
+        price: 240000,
         type: 'Escaner Profesional',
     },
     {
@@ -1826,7 +1826,7 @@ export const CardAllItems = [
                 content: 'Dimensiones: 270.8 mm (10.0”) x 176.0 mm (6.9”) x 36.0mm (1.4”)',
             },
         ],
-        price: '260.000,00',
+        price: 260000,
         type: 'Escaner Profesional',
     },
     {
@@ -1847,7 +1847,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.536,00',
+        price: 4536,
         type: 'Gnc',
     },
     {
@@ -1868,7 +1868,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.300,00',
+        price: 6300,
         type: 'Gnc',
     },
     {
@@ -1889,7 +1889,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.300,00',
+        price: 6300,
         type: 'Gnc',
     },
     {
@@ -1910,7 +1910,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.536,00',
+        price: 4536,
         type: 'Gnc',
     },
     {
@@ -1931,7 +1931,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '8.500,00',
+        price: 8500,
         type: 'Gnc',
     },
     {
@@ -1952,7 +1952,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.300,00',
+        price: 6300,
         type: 'Gnc',
     },
     {
@@ -1973,7 +1973,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.720,00',
+        price: 6720,
         type: 'Gnc',
     },
     {
@@ -1994,7 +1994,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.300,00',
+        price: 6300,
         type: 'Gnc',
     },
     {
@@ -2015,7 +2015,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.536,00',
+        price: 4536,
         type: 'Gnc',
     },
     {
@@ -2036,7 +2036,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '2.300,00',
+        price: 2300,
         type: 'Gnc',
     },
     {
@@ -2057,7 +2057,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.620,00',
+        price: 4620,
         type: 'Gnc',
     },
     {
@@ -2078,7 +2078,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.536,00',
+        price: 4536,
         type: 'Gnc',
     },
     {
@@ -2099,7 +2099,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.536,00',
+        price: 4536,
         type: 'Gnc',
     },
     {
@@ -2120,7 +2120,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.300,00',
+        price: 6300,
         type: 'Gnc',
     },
     {
@@ -2141,7 +2141,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.300,00',
+        price: 6300,
         type: 'Gnc',
     },
     {
@@ -2162,7 +2162,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '3.150,00',
+        price: 3150,
         type: 'Gnc',
     },
     {
@@ -2183,7 +2183,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.500,00',
+        price: 4500,
         type: 'Gnc',
     },
     {
@@ -2204,7 +2204,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.620,00',
+        price: 4620,
         type: 'Gnc',
     },
     {
@@ -2225,7 +2225,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '5.880,00',
+        price: 5880,
         type: 'Gnc',
     },
     {
@@ -2246,7 +2246,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.300,00',
+        price: 6300,
         type: 'Gnc',
     },
     {
@@ -2267,7 +2267,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '8.500,00',
+        price: 8500,
         type: 'Gnc',
     },
     {
@@ -2288,7 +2288,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '3.150,00',
+        price: 3150,
         type: 'Gnc',
     },
     {
@@ -2309,7 +2309,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '4.620,00',
+        price: 4620,
         type: 'Gnc',
     },
     {
@@ -2330,7 +2330,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '6.300,00',
+        price: 6300,
         type: 'Gnc',
     },
     {
@@ -2352,7 +2352,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '5.500,00',
+        price: 5500,
         type: 'Porton',
     },
     {
@@ -2374,7 +2374,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '5.700,00',
+        price: 5700,
         type: 'Porton',
     },
     {
@@ -2594,7 +2594,7 @@ export const CardAllItems = [
                 content: 'Accesorios: 4 baterías de 1.5V AA, marcas de la cinta reflectante x3, 1 manual de usuario',
             },
         ],
-        price: '3.508,00',
+        price: 3508,
         type: 'Tacometro',
     },
     {
@@ -2683,7 +2683,7 @@ export const CardAllItems = [
                 content: 'Temperatura: -20 ° C-1000 ° C ± 2,0%',
             },
         ],
-        price: '1.171,00',
+        price: 1171,
         type: 'Testers',
     },
     {
@@ -2760,7 +2760,7 @@ export const CardAllItems = [
                 content: 'Resistencia: 200-2000-20K-200K-2000KO ± 1,0%',
             },
         ],
-        price: '680,00',
+        price: 680,
         type: 'Testers',
     },
     {
@@ -2853,7 +2853,7 @@ export const CardAllItems = [
                 content: 'Frecuencia: 5-50-500-5K-50K-500K-5MHZ ± 3.0%',
             },
         ],
-        price: '3.552,00',
+        price: 3552,
         type: 'Testers',
     },
     {
@@ -2970,7 +2970,7 @@ export const CardAllItems = [
                 content: 'Ángulo de permanencia: 4/6/8 CYL ± 3,0%',
             },
         ],
-        price: '8.130,00',
+        price: 813000,
         type: 'Testers',
     },
     {
@@ -3059,7 +3059,7 @@ export const CardAllItems = [
                 content: 'Temperatura: -20ºC ~ 1000ºC ± 2,0%',
             },
         ],
-        price: '1.481,00',
+        price: 1481,
         type: 'Testers',
     },
     {
@@ -3156,7 +3156,7 @@ export const CardAllItems = [
                 content: 'Frecuencia: 10-100-1K-10K-100K-1M-10MHz ± 3.0%',
             },
         ],
-        price: '4.391,00',
+        price: 4391,
         type: 'Testers',
     },
     {
@@ -3261,7 +3261,7 @@ export const CardAllItems = [
                 content: 'Capacidad: 20n-200n-2u-20u-200uF ± 4,0%',
             },
         ],
-        price: '2.197,00',
+        price: 2197,
         type: 'Testers',
     },
 ]

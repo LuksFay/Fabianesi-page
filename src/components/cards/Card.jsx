@@ -17,7 +17,6 @@ const Card = (props) => {
                     <div className="product__details">
                         <span className="product__category">{item.type}</span>
                         <h3>{item.title}</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, dicta?</p>
                         <div className="product__bottom__details">
                             <div className="product__price">{'$' + item.price}</div>
                             <div className="product__links">

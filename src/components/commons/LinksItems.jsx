@@ -35,4 +35,10 @@ export const linksItems = [
       path: "./contacto",
       linkClass: "link-item",
     },
+    {
+      id: 7,
+      title: "Carrito",
+      path: "./carrito",
+      linkClass: "link-item",
+    },
 ];

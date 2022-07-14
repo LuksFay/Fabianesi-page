@@ -4,7 +4,7 @@ import CheckBox from '../components/CheckBox';
 import SliderCards from '../components/cards/SliderCards';
 import '../styles/Catalogo.css';
 
-const Catalogo = () => {
+const Catalogo = ( {handleAddProduct} ) => {
   const [filters, setFilters] = useState([])
 
   return (
@@ -14,7 +14,7 @@ const Catalogo = () => {
         <div className='filter__catalogo'>
           <CheckBox filters={filters} setFilters={setFilters} />
         </div>
-        <CardCatalogo filters={filters} />
+        <CardCatalogo filters={filters} handleAddProduct={handleAddProduct}/>
       </div>
     </>
   )
