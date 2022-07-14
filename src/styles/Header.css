@@ -60,3 +60,22 @@
 }
 
 }
+
+.cart-length{
+    margin: -18px;
+    margin-bottom: 5px;
+    font-size: .6em;
+    padding: .3rem;
+    border-radius: 50%;
+    color: #3483fa;
+    font-weight: 700;
+}
+
+.cart-length-mobile{
+    margin: -50px 0 0 70px;
+    font-size: 1em;
+    padding: .3rem;
+    border-radius: 50%;
+    color: #3483fa;
+    font-weight: 700;
+}

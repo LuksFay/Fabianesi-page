@@ -4,12 +4,14 @@ import { CardAllItems } from '../items/CardAllItems';
 import InfoIcon from '@mui/icons-material/Info';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
-  
+import {Toaster} from 'react-hot-toast';
 
 
 const CardCatalogo = ({filters, handleAddProduct}) => {
 
-
+    <Toaster 
+    position="bottom-center"
+    reverseOrder={false}/>
     const itemsFiltered = (Items) => {
         if(filters?.length) {
             return Items?.filter(item => filters?.includes(item.type))

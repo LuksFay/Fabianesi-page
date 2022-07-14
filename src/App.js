@@ -11,6 +11,7 @@ import Footer from './components/commons/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import InfoCardDetail from './pages/InfoCardDetail';
 import ShoppingCart from './pages/ShoppingCart';
+import {Toaster, toast} from 'react-hot-toast';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         : item
         )
       );
+      toast('✔️ Producto añadido')
     } else {
       setCartItems([...cartItems, {...product, quantity: 1}]);
     }
@@ -53,6 +55,9 @@ function App() {
       <ScrollToTop />
         <Paper>
           <Header cartItems={cartItems} />
+            <Toaster
+            position="bottom-center"
+            reverseOrder={false} />
             <Routes>
               <Route path='/' exact element={<Inicio />}/>
               <Route path='/catalogo' element={<Catalogo handleAddProduct={handleAddProduct} />}/>
