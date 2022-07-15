@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/ShoppingCart.css'
+import {Link} from 'react-router-dom';
 
 
 const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance } ) => {
@@ -10,6 +11,9 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
      );
   return (
     <>
+                <Link to={'/test'}>
+                    test
+                </Link>
         <div className='cart-items'>
           <h2 className='cart-items-header'>Sus productos en el carrito</h2>
           

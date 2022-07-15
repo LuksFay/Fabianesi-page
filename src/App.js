@@ -12,12 +12,14 @@ import ScrollToTop from './components/ScrollToTop';
 import InfoCardDetail from './pages/InfoCardDetail';
 import ShoppingCart from './pages/ShoppingCart';
 import {Toaster, toast} from 'react-hot-toast';
+import Probando from './pages/Probando';
 
 function App() {
 
   const [cartItems, setCartItems] = useState([]);
 
   const handleAddProduct = (product) => {
+    toast('✔️ Producto añadido')
     const ProductExist = cartItems.find((item) => item.id === product.id);
     if(ProductExist){
       setCartItems(
@@ -27,11 +29,12 @@ function App() {
         : item
         )
       );
-      toast('✔️ Producto añadido')
     } else {
       setCartItems([...cartItems, {...product, quantity: 1}]);
     }
+    
   };
+ 
 
   const handleRemoveProduct = (product) =>{
     const ProductExist = cartItems.find((item) => item.id === product.id);
@@ -47,6 +50,9 @@ function App() {
   const handleCartClearance = () => {
     setCartItems([]);
   }
+
+
+
 
   return (
     <>
@@ -74,6 +80,7 @@ function App() {
                 handleRemoveProduct={handleRemoveProduct}
                 handleCartClearance={handleCartClearance} />
                 } />
+              <Route path='/test'  element={<Probando cartItems={cartItems} />}/>
             </Routes>
           <Footer />
         </Paper>
