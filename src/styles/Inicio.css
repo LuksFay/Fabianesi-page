@@ -76,6 +76,21 @@
     padding: .5rem;
 }
 
+/* MAP SECTION */
+
+.text__empresa{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title__empresa{
+    font-size: 3rem;
+}
+.descr__empresa{
+    font-size: 1.2rem;
+}
+
 @media (max-width: 768px){
 
 .empresa__section{
