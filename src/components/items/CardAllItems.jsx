@@ -304,7 +304,7 @@ export const CardAllItems = [
                 content: 'Solicitar especificaciones por consulta',
             },
         ],
-        price: '15.136,00',
+        price: 15136,
         type: 'Diagnostico Directo',
     },
     {

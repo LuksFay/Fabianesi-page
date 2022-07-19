@@ -20,13 +20,18 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
 
   return (
     <>
+      <div className='shopping-cart-container'>
         <div className='cart-items'>
+
+
           <h2 className='cart-items-header'>Sus productos en el carrito</h2>
           
           {cartItems.length === 0 && (
            <h2 className='cart-items-empty'>No hay ningun producto en su carrito.</h2>
           )}
-          <div>
+
+
+          <div className='cart-container'>
 
             {cartItems.map((item)=>(
               <div key={item.id} className="cart-items-container">
@@ -90,6 +95,7 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
 
           </div>
         </div>
+      </div>
     </>
   )
 }

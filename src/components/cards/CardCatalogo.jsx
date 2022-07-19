@@ -33,7 +33,7 @@ const CardCatalogo = ({filters, handleAddProduct}) => {
                         <span className="product__category">{item.type}</span>
                         <h3>{item.title}</h3>
                         <div className="product__bottom__details">
-                            <div className="product__price">{'$' + item.price}</div>
+                            <div className="product__price">{'$ ' + item.price + '.00'}</div>
                             <div className="product__links">
                                 <Link to={'/' + item.id}><InfoIcon /></Link>
                                 <span onClick={() => handleAddProduct(item)}><ShoppingCartIcon/></span>
