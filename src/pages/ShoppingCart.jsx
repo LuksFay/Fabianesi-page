@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/ShoppingCart.css'
-import {Link} from 'react-router-dom';
 
 
 const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance } ) => {
@@ -9,11 +8,18 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
     (price, item) => price + item.quantity * item.price,
      0
      );
+
+  let cartArrayForWSP = [];
+  let cartStrForWsp = "";
+   cartItems.forEach(element => {
+    cartArrayForWSP.push(element.quantity + ' unidades de '+ element.title + ' $ '  + element.price + ' ⚙️ ');
+    cartStrForWsp=cartArrayForWSP;
+  }); 
+     
+
+
   return (
     <>
-                <Link to={'/test'}>
-                    test
-                </Link>
         <div className='cart-items'>
           <h2 className='cart-items-header'>Sus productos en el carrito</h2>
           
@@ -54,7 +60,23 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
               
             <div className='clear-cart'>
                 {cartItems.length >=1 && (
-                <button className='buy-cart-button'>Comprar</button>
+                <a className='buy-cart-button'  href={`https://api.whatsapp.com/send?phone=+543412019025&text=
+                Hola!%20
+                Vengo%20
+                de%20
+                la%20
+                p%C3%A1gina.%20
+                Quisiera%20
+                continuar%20
+                con%20
+                la%20
+                compra%20
+                de%20
+                los%20
+                siguientes%20
+                productos:%20
+                *${cartStrForWsp}}*`}
+                target='_blank'>Comprar</a>
                 )}
             </div>
               

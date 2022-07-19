@@ -12,7 +12,6 @@ import ScrollToTop from './components/ScrollToTop';
 import InfoCardDetail from './pages/InfoCardDetail';
 import ShoppingCart from './pages/ShoppingCart';
 import {Toaster, toast} from 'react-hot-toast';
-import Probando from './pages/Probando';
 
 function App() {
 
@@ -80,7 +79,6 @@ function App() {
                 handleRemoveProduct={handleRemoveProduct}
                 handleCartClearance={handleCartClearance} />
                 } />
-              <Route path='/test'  element={<Probando cartItems={cartItems} />}/>
             </Routes>
           <Footer />
         </Paper>
