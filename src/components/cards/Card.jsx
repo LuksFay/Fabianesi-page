@@ -4,7 +4,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 
-const Card = (props) => {
+const Card = (props, {handleAddProduct}) => {
   return (
     <>
         <div className='card__section'>
@@ -21,13 +21,13 @@ const Card = (props) => {
                             <div className="product__price">{'$' + item.price}</div>
                             <div className="product__links">
                                 <Link to={'/' + item.id}><InfoIcon /></Link>
-                                <Link to='/'><ShoppingCartIcon /></Link>
+                                <span onClick={() => handleAddProduct(item)}><ShoppingCartIcon/></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 )
-            })}       
+            })}
         </div>
     </>
   )

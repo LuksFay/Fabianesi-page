@@ -2,16 +2,18 @@ import { useState } from 'react';
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
+import ThemeConfig from './components/materialConfig/ThemeConfig';
+import { Paper } from '@mui/material';
+import {Toaster, toast} from 'react-hot-toast';
+import ScrollToTop from './components/ScrollToTop';
 import Header from './components/commons/Header';
 import Inicio from './pages/Inicio';
 import Catalogo from './pages/Catalogo';
-import ThemeConfig from './components/materialConfig/ThemeConfig';
-import { Paper } from '@mui/material';
-import Footer from './components/commons/Footer';
-import ScrollToTop from './components/ScrollToTop';
+import Condiciones from './pages/Condiciones';
+import Contacto from './pages/Contacto';
 import InfoCardDetail from './pages/InfoCardDetail';
 import ShoppingCart from './pages/ShoppingCart';
-import {Toaster, toast} from 'react-hot-toast';
+import Footer from './components/commons/Footer';
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
 
   const handleAddProduct = (product) => {
     toast('✔️ Producto añadido')
+    console.log('Producto seleccionado')
     const ProductExist = cartItems.find((item) => item.id === product.id);
     if(ProductExist){
       setCartItems(
@@ -64,21 +67,30 @@ function App() {
             position="bottom-center"
             reverseOrder={false} />
             <Routes>
-              <Route path='/' exact element={<Inicio />}/>
+            
+              <Route path='/' exact element={<Inicio handleAddProduct={handleAddProduct} />}/>
+              
               <Route path='/catalogo' element={<Catalogo handleAddProduct={handleAddProduct} />}/>
+              
               {/* <Route path='/empresa' element={<Empresa />}/>
               <Route path='/envios' element={<Envios />}/>
+              */}
+              
               <Route path='/condicionesDeVenta' element={<Condiciones />}/>
-              <Route path='/contacto' element={<Contacto />}/> */}
+              
+              <Route path='/contacto' element={<Contacto />}/>
+              
               {/* DETAIL PRODUCTS CARD PAGE */}
-              <Route path='/:card_id'  element={<InfoCardDetail />}/>
+              <Route path='/:card_id'  element={<InfoCardDetail handleAddProduct={handleAddProduct} />}/>
+              
               <Route path='/carrito'  element={
-                <ShoppingCart 
+                <ShoppingCart
                 cartItems={cartItems}
-                handleAddProduct={handleAddProduct} 
+                handleAddProduct={handleAddProduct}
                 handleRemoveProduct={handleRemoveProduct}
                 handleCartClearance={handleCartClearance} />
-                } />
+              }/>
+                
             </Routes>
           <Footer />
         </Paper>
@@ -89,6 +101,3 @@ function App() {
 }
 
 export default App;
-
-
-// encontrar la manera de pasar como prop a el link "carrito" en navbar el state de cartItem. 48:25

@@ -14,7 +14,7 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
    cartItems.forEach(element => {
     cartArrayForWSP.push(element.quantity + ' unidades de '+ element.title + ' $ '  + element.price + ' ⚙️ ');
     cartStrForWsp=cartArrayForWSP;
-  }); 
+  });
      
 
 
@@ -57,8 +57,8 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
 
 
             <div className='cart-items-total-price'>
-              <p>Precio Total</p> 
-              <p>${totalPrice}</p> 
+              <p>Precio Total</p>
+              <p>${totalPrice}</p>
             </div>
 
             <div className='cart-actions'>
@@ -81,7 +81,8 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
                 siguientes%20
                 productos:%20
                 *${cartStrForWsp}}*`}
-                target='_blank'>Comprar</a>
+                target='_blank'
+                rel="noreferrer">Comprar</a>
                 )}
             </div>
               

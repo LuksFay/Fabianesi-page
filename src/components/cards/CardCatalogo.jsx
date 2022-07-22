@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import '../../styles/Card.css';
 import { CardAllItems } from '../items/CardAllItems';
 import InfoIcon from '@mui/icons-material/Info';
@@ -9,7 +9,7 @@ import {Toaster} from 'react-hot-toast';
 
 const CardCatalogo = ({filters, handleAddProduct}) => {
 
-    <Toaster 
+    <Toaster
     position="bottom-center"
     reverseOrder={false}/>
     const itemsFiltered = (Items) => {

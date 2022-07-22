@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import MapView from '../components/leafletMapComponents/MapView';
 // import ThemeConfig from '../components/materialConfig/ThemeConfig';
 
-const Inicio = () => {
+const Inicio = ( {handleAddProduct} ) => {
   return (
     <>
     <section className='hero__section'>
@@ -18,7 +18,7 @@ const Inicio = () => {
 
     <section className="new__product__section">
         <h2 className="title__section__card">Nuevos Productos</h2>
-        <Card items={CardItemsHero}/>
+        <Card items={CardItemsHero} handleAddProduct={handleAddProduct} />
         <div className="btn__link__container">
             <Button color="primary" variant="contained" size="large">
                 <Link to={'/catalogo'}>
@@ -30,7 +30,7 @@ const Inicio = () => {
 
     <section className="important__product__section">
         <h2 className="title__section__card">Productos Destacados</h2>
-        <Card items={CardItemsBest}/>
+        <Card items={CardItemsBest} handleAddProduct={handleAddProduct} />
         <div className="btn__link__container">
             <Button variant="contained" size="large">
                 <Link to={'/catalogo'}>
