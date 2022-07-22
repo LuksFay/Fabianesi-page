@@ -4,7 +4,7 @@ import '../../styles/Footer.css';
 const Footer = () => {
   return (
     <div className='footer-container'>
-        <h3 className='footer-text'></h3>
+        <p className='footer-text'>Página desarrollada por Arcade Estudio</p>
     </div>
   )
 }

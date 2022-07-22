@@ -8,15 +8,30 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
     (price, item) => price + item.quantity * item.price,
      0
      );
+
+  let cartArrayForWSP = [];
+  let cartStrForWsp = "";
+   cartItems.forEach(element => {
+    cartArrayForWSP.push(element.quantity + ' unidades de '+ element.title + ' $ '  + element.price + ' ⚙️ ');
+    cartStrForWsp=cartArrayForWSP;
+  });
+     
+
+
   return (
     <>
+      <div className='shopping-cart-container'>
         <div className='cart-items'>
+
+
           <h2 className='cart-items-header'>Sus productos en el carrito</h2>
           
           {cartItems.length === 0 && (
            <h2 className='cart-items-empty'>No hay ningun producto en su carrito.</h2>
           )}
-          <div>
+
+
+          <div className='cart-container'>
 
             {cartItems.map((item)=>(
               <div key={item.id} className="cart-items-container">
@@ -42,15 +57,32 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
 
 
             <div className='cart-items-total-price'>
-              <p>Precio Total</p> 
-              <p>${totalPrice}</p> 
+              <p>Precio Total</p>
+              <p>${totalPrice}</p>
             </div>
 
             <div className='cart-actions'>
               
             <div className='clear-cart'>
                 {cartItems.length >=1 && (
-                <button className='buy-cart-button'>Comprar</button>
+                <a className='buy-cart-button'  href={`https://api.whatsapp.com/send?phone=+543412019025&text=
+                Hola!%20
+                Vengo%20
+                de%20
+                la%20
+                p%C3%A1gina.%20
+                Quisiera%20
+                continuar%20
+                con%20
+                la%20
+                compra%20
+                de%20
+                los%20
+                siguientes%20
+                productos:%20
+                *${cartStrForWsp}}*`}
+                target='_blank'
+                rel="noreferrer">Comprar</a>
                 )}
             </div>
               
@@ -64,6 +96,7 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
 
           </div>
         </div>
+      </div>
     </>
   )
 }
