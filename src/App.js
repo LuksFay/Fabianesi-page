@@ -16,7 +16,7 @@ import ShoppingCart from './pages/ShoppingCart';
 import Footer from './components/commons/Footer';
 
 function App() {
-
+  
   const [cartItems, setCartItems] = useState([]);
 
   const handleAddProduct = (product) => {

@@ -50,10 +50,3 @@ const CardCatalogo = ({filters, handleAddProduct}) => {
 }
 
 export default CardCatalogo
-
-// link de wsp
-//https://api.whatsapp.com/send?phone=+543412019025&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%20Quisiera%20continuar%20con%20la%20compra%20de%20los%20siguientes%20productos:%20*producto*,%20*producto*
-
-// info que tenia la etiqueta <a> antes de usar la funcion addToCart
-//href={`https://api.whatsapp.com/send?phone=+543412019025&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%20Quisiera%20continuar%20con%20la%20compra%20del%20siguiente%20producto:%20*${item.title}*`}target='_blank'
-//

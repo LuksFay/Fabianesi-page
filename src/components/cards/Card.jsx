@@ -21,7 +21,7 @@ const Card = (props, {handleAddProduct}) => {
                             <div className="product__price">{'$ ' + item.price + '.00'}</div>
                             <div className="product__links">
                                 <Link to={'/' + item.id}><InfoIcon /></Link>
-                                <span onClick={() => handleAddProduct(item)}><ShoppingCartIcon/></span>
+                                <span onClick={()=>{handleAddProduct(item)}}><ShoppingCartIcon/></span>
                             </div>
                         </div>
                     </div>
