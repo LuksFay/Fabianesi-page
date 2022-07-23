@@ -1,13 +1,13 @@
-.condiciones-section{
+.contacto-section{
   height: 100vh;
 }
-.condiciones-div-principal{
+.contacto-div-principal{
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   justify-content: space-between;
 }
-.condiciones-descripcion{
+.contacto-descripcion{
   line-height: 1.5rem;
 }
