@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/Contacto.css';
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
 const Contacto = () => {
   return (
     <>
@@ -11,9 +13,9 @@ const Contacto = () => {
               La empresa ofrece tres opciones de contacto: eMail, WhatsApp y llamada telefónica
             </p>
             <div className='contacto-iconos'>
-              <span>e-mail icono</span>
-              <span>WhatsApp icono</span>
-              <span>Teléfono icono</span>
+              <EmailIcon/>
+              <WhatsAppIcon />
+              <CallIcon/>
             </div>
             <p>Si deseas adjuntar algun tipo de archivo recomendamos que uses la opción de eMail y que para estar más seguros dejes una constancia en un mensaje de WhatspApp</p>
         </div>
