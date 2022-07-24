@@ -11,3 +11,16 @@
 .contacto-descripcion{
   line-height: 1.5rem;
 }
+
+.contacto-iconos{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.contacto-iconos a{
+  text-decoration: none;
+  color: #fff;
+}
+.icon{
+  font-size: 2rem;
+}

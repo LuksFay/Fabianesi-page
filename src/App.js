@@ -11,6 +11,8 @@ import Inicio from './pages/Inicio';
 import Catalogo from './pages/Catalogo';
 import Condiciones from './pages/Condiciones';
 import Contacto from './pages/Contacto';
+import Empresa from './pages/Empresa';
+import Envios from './pages/Envios';
 import InfoCardDetail from './pages/InfoCardDetail';
 import ShoppingCart from './pages/ShoppingCart';
 import Footer from './components/commons/Footer';
@@ -72,9 +74,9 @@ function App() {
               
               <Route path='/catalogo' element={<Catalogo handleAddProduct={handleAddProduct} />}/>
               
-              {/* <Route path='/empresa' element={<Empresa />}/>
+              <Route path='/empresa' element={<Empresa />}/>
+              
               <Route path='/envios' element={<Envios />}/>
-              */}
               
               <Route path='/condicionesDeVenta' element={<Condiciones />}/>
               

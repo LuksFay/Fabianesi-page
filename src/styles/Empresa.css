@@ -1,0 +1,13 @@
+.empresa-section{
+  height: 100vh;
+}
+.empresa-div-principal{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.empresa-descripcion{
+  line-height: 1.5rem;
+}

@@ -65,22 +65,7 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
               
             <div className='clear-cart'>
                 {cartItems.length >=1 && (
-                <a className='buy-cart-button'  href={`https://api.whatsapp.com/send?phone=+543412019025&text=
-                Hola!%20
-                Vengo%20
-                de%20
-                la%20
-                p%C3%A1gina.%20
-                Quisiera%20
-                continuar%20
-                con%20
-                la%20
-                compra%20
-                de%20
-                los%20
-                siguientes%20
-                productos:%20
-                *${cartStrForWsp}}*`}
+                <a className='buy-cart-button'  href={`https://api.whatsapp.com/send?phone=+543412019025&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%20Quisiera%20continuar%20con%20la%20compra%20de%20los%20siguientes%20productos:%20*${cartStrForWsp}}*`}
                 target='_blank'
                 rel="noreferrer">Comprar</a>
                 )}
