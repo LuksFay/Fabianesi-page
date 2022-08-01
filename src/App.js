@@ -76,7 +76,7 @@ function App() {
               
               <Route path='/empresa' element={<Empresa />}/>
               
-              <Route path='/envios' element={<Envios />}/>
+              {/*<Route path='/envios' element={<Envios />}/>*/}
               
               <Route path='/condicionesDeVenta' element={<Condiciones />}/>
               

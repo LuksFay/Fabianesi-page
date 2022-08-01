@@ -11,3 +11,9 @@
 .condiciones-descripcion{
   line-height: 1.5rem;
 }
+
+@media (max-width: 1023px){
+  .condiciones-section{
+    height: 100%;
+  }
+}
