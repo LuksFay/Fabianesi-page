@@ -1,0 +1,19 @@
+.condiciones-section{
+  height: 100vh;
+}
+.condiciones-div-principal{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.condiciones-descripcion{
+  line-height: 1.5rem;
+}
+
+@media (max-width: 1023px){
+  .condiciones-section{
+    height: 100%;
+  }
+}

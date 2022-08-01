@@ -4,23 +4,23 @@ import '../styles/ShoppingCart.css'
 
 const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance } ) => {
 
+  
   const totalPrice = cartItems.reduce(
     (price, item) => price + item.quantity * item.price,
      0
      );
 
+
   let cartArrayForWSP = [];
   let cartStrForWsp = "";
    cartItems.forEach(element => {
-    cartArrayForWSP.push(element.quantity + ' unidades de '+ element.title + ' $ '  + element.price + ' ⚙️ ');
+    cartArrayForWSP.push(`*${element.quantity} unidades de ${element.title} $${element.price}*%0a`);
     cartStrForWsp=cartArrayForWSP;
   });
-     
-
 
   return (
     <>
-      <div className='shopping-cart-container'>
+      <div className={cartItems.length === 0 ? 'shopping-cart-container-empty' : 'shopping-cart-container-full' }>
         <div className='cart-items'>
 
 
@@ -65,22 +65,7 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
               
             <div className='clear-cart'>
                 {cartItems.length >=1 && (
-                <a className='buy-cart-button'  href={`https://api.whatsapp.com/send?phone=+543412019025&text=
-                Hola!%20
-                Vengo%20
-                de%20
-                la%20
-                p%C3%A1gina.%20
-                Quisiera%20
-                continuar%20
-                con%20
-                la%20
-                compra%20
-                de%20
-                los%20
-                siguientes%20
-                productos:%20
-                *${cartStrForWsp}}*`}
+                <a className='buy-cart-button'  href={`https://api.whatsapp.com/send?phone=+543412019025&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%0aQuisiera%20continuar%20con%20la%20compra%20de%20los%20siguientes%20productos:%0a${cartStrForWsp}%0aEl%20total%20es:%20$${totalPrice}`}
                 target='_blank'
                 rel="noreferrer">Comprar</a>
                 )}

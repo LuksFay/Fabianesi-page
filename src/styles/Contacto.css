@@ -1,0 +1,27 @@
+.contacto-section{
+  height: 100vh;
+}
+.contacto-div-principal{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.contacto-descripcion{
+  line-height: 1.5rem;
+}
+
+.contacto-iconos{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.contacto-iconos a{
+  text-decoration: none;
+  color: #fff;
+}
+.icon{
+  width: 3em !important;
+  height: 3em !important;
+}

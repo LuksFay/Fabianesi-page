@@ -1,0 +1,44 @@
+.empresa-section{
+  height: 100%;
+}
+.empresa-div-principal{
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.empresa-descripcion{
+  line-height: 1.5rem;
+  margin: 0 15px;
+}
+.foto-perfil{
+  height: 600px;
+  width: 480px;
+  float: right;
+}
+.fotos-empresa{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap
+}
+.foto-empresa{
+  height: 700px;
+  width: 500px;
+}
+@media (max-width: 599px){
+  .foto-perfil{
+    height: 250px;
+    width: 200px;
+    margin: 15px auto;
+    display: block;
+    float: none;
+  }
+  .foto-empresa{
+    height: 500px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+
+}

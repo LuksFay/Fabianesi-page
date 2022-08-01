@@ -1,8 +1,11 @@
-.shopping-cart-container{
+.shopping-cart-container-empty{
     height: 100vh;
     overflow: hidden;
 }
-
+.shopping-cart-container-full{
+    height: 100%;
+    overflow: hidden;
+}
 .cart-items{
     display: flex;
     flex-direction: column;

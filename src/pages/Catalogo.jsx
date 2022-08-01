@@ -9,7 +9,9 @@ const Catalogo = ( {handleAddProduct} ) => {
 
   return (
     <>
-      <SliderCards />
+      <SliderCards 
+        handleAddProduct={handleAddProduct}
+      />
       <div className="container__catalogo">
         <div className='filter__catalogo'>
           <CheckBox filters={filters} setFilters={setFilters} />

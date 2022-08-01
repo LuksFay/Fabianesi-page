@@ -8,7 +8,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 
-const SliderCards = () => {
+const SliderCards = ({handleAddProduct}) => {
     const settings = {
       dots: true,
       infinite: true,
@@ -62,7 +62,7 @@ const SliderCards = () => {
                                 <h4>${item.price}</h4>
                                 <div className="card__bottom__links">
                                   <Link to={'/' + item.id}><InfoIcon /></Link>
-                                  <Link to='/'><ShoppingCartIcon /></Link>
+                                  <span onClick={() => handleAddProduct(item)}><ShoppingCartIcon/></span>
                                 </div>
                             </div>
                         </div>
