@@ -41,7 +41,7 @@ const Inicio = ( {handleAddProduct} ) => {
     </section>
 
 
-    <section className='empresa__section'>
+    {/*<section className='empresa__section'>
         <div className='info__empresa'>
             <div className="text__empresa">
                 <h3 className='title__empresa'>¿Dónde estamos?</h3>
@@ -51,7 +51,7 @@ const Inicio = ( {handleAddProduct} ) => {
         <div className="map__empresa">
             <MapView />
         </div>
-    </section>
+  </section>*/}
     </>
   )
 }
