@@ -4,19 +4,19 @@ import '../styles/ShoppingCart.css'
 
 const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handleCartClearance } ) => {
 
+  
   const totalPrice = cartItems.reduce(
     (price, item) => price + item.quantity * item.price,
      0
      );
 
+
   let cartArrayForWSP = [];
   let cartStrForWsp = "";
    cartItems.forEach(element => {
-    cartArrayForWSP.push(element.quantity + ' unidades de '+ element.title + ' $ '  + element.price + ' ⚙️ ');
+    cartArrayForWSP.push(`*${element.quantity} unidades de ${element.title} $${element.price}*%0a`);
     cartStrForWsp=cartArrayForWSP;
   });
-     
-
 
   return (
     <>
@@ -65,7 +65,7 @@ const ShoppingCart = ( { cartItems, handleAddProduct, handleRemoveProduct, handl
               
             <div className='clear-cart'>
                 {cartItems.length >=1 && (
-                <a className='buy-cart-button'  href={`https://api.whatsapp.com/send?phone=+543412019025&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%20Quisiera%20continuar%20con%20la%20compra%20de%20los%20siguientes%20productos:%20*${cartStrForWsp}}*`}
+                <a className='buy-cart-button'  href={`https://api.whatsapp.com/send?phone=+543417120219&text=Hola!%20Vengo%20de%20la%20p%C3%A1gina.%0aQuisiera%20continuar%20con%20la%20compra%20de%20los%20siguientes%20productos:%0a${cartStrForWsp}%0aEl%20total%20es:%20$${totalPrice}`}
                 target='_blank'
                 rel="noreferrer">Comprar</a>
                 )}
