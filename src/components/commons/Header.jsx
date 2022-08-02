@@ -105,5 +105,3 @@ const Header = ({cartItems}) => {
 }
 
 export default Header
-
-//crear un div y ubicarlo con css para ubicarlo al lado de link carrito 
