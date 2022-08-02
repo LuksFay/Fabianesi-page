@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter, Routes, Route} from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import ThemeConfig from './components/materialConfig/ThemeConfig';
 import { Paper } from '@mui/material';
@@ -61,7 +61,7 @@ function App() {
   return (
     <>
     <ThemeProvider theme={ThemeConfig}>
-      <BrowserRouter>
+      <HashRouter>
       <ScrollToTop />
         <Paper>
           <Header cartItems={cartItems} />
@@ -96,7 +96,7 @@ function App() {
             </Routes>
           <Footer />
         </Paper>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
     </>
   );

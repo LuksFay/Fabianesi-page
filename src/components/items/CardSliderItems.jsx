@@ -2,7 +2,7 @@ export const CardSliderItems = [
     {
         id: 6,
         image: 'diagnostico_directo/generador_pulsos_inyectores',
-        title: 'Generador de Pulsos de Inyectores',
+        title: 'Generador de Pulsos d...',
         price: 15136,
         type: 'Diagnostico Directo',
     },

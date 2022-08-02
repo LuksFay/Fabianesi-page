@@ -25,11 +25,11 @@ const LinksItems = [
     title: "Empresa",
     path: "./empresa",
   },
-  {
+/*  {
     id: 4,
     title: "Envios",
     path: "./envios",
-  },
+  },*/
   {
     id: 5,
     title: "Condiciones",
@@ -105,5 +105,3 @@ const Header = ({cartItems}) => {
 }
 
 export default Header
-
-//crear un div y ubicarlo con css para ubicarlo al lado de link carrito 

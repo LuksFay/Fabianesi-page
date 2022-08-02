@@ -17,12 +17,12 @@ export const linksItems = [
       path: "./empresa",
       linkClass: "link-item",
     },
-    {
+    /*{
       id: 4,
       title: "Envios",
       path: "./envios",
       linkClass: "link-item",
-    },
+    },*/
     {
       id: 5,
       title: "Condiciones de venta",
