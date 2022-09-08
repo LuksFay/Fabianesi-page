@@ -7,8 +7,8 @@ Third  task of Arcade Studio.
 Frontends Developers: [Alvaro Jorge](https://github.com/Alvaro0096) & [Fernando Lucas Picco](https://github.com/LuksFay).
 
 ## Dependencies
-MUI
-React-Slick
-React-Leaflet
-React-Hot-Toast
+MUI,
+React-Slick,
+React-Leaflet,
+React-Hot-Toast,
 React-Router-Dom
